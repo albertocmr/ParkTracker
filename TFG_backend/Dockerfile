@@ -1,5 +1,5 @@
 # --- Fase 1: compilación con Maven ---
-FROM maven:3.9.16-eclipse-temurin-21-noble AS build
+FROM maven:3.9-eclipse-temurin-26-noble AS build
 
 WORKDIR /build
 
