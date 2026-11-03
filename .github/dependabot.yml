@@ -25,6 +25,10 @@ updates:
     schedule:
       interval: weekly
     groups:
+      # react y react-dom deben ir siempre en la misma versión: por separado la build falla.
+      # Va antes que "frontend" porque cada dependencia entra en el primer grupo que encaja.
+      react:
+        patterns: [react, react-dom]
       frontend:
         update-types: [minor, patch]
     ignore:
