@@ -6,6 +6,5 @@ const { id } = Astro.params;
 ---
 
 <Layout title="Editar Parque Natural">
-  {console.log(`ID recibido: ${id}`)}
   <AddNaturalParkComponent id={id} client:only="react"/>
 </Layout>

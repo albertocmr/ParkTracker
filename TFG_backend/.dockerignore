@@ -1,0 +1,9 @@
+# La configuración local puede llevar credenciales: en Docker todo llega por variables de entorno
+src/main/resources/application.properties
+application.properties
+*.env
+*.local
+target
+.idea
+.vscode
+.DS_Store

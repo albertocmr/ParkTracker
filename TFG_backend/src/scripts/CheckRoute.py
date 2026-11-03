@@ -1,97 +1,104 @@
-import geopandas as gpd
-import gpxpy
-import gpxpy.gpx
-import pandas as pd
-import os
+"""
+Comprueba qué parques naturales atraviesa una ruta GPX.
+
+Uso: python3 CheckRoute.py <ruta.gpx> <directorio_geojson>
+
+Escribe en stdout un JSON con:
+  - parks: nombres (fichero sin extensión) de los parques que atraviesa la ruta
+  - intersections: {parque: GeoJSON MultiLineString con los tramos dentro del parque}
+
+Códigos de salida: 0 OK, 1 error interno, 2 GPX inválido.
+Los mensajes de diagnóstico van a stderr para no romper el JSON de stdout.
+"""
 import json
+import os
 import sys
 
-try:
-    gpx_files = [f for f in os.listdir("uploads") if f.endswith(".gpx")]
-    if not gpx_files:
-        raise FileNotFoundError("No se ha encontrado ningún archivo GPX en la carpeta uploads")
+import geopandas as gpd
+import gpxpy
+import pandas as pd
 
-    gpx_file = os.path.join("uploads", gpx_files[0])
 
-    try:
-        with open(gpx_file, 'r') as f:
-            gpx = gpxpy.parse(f)
-    except Exception as e:
-        raise Exception(f"Error al parsear el archivo GPX: {e}")
+def log(msg):
+    print(msg, file=sys.stderr)
 
-    points = [(point.latitude, point.longitude) 
-              for track in gpx.tracks 
-              for segment in track.segments 
+
+def load_points(gpx_path):
+    with open(gpx_path, 'r', encoding='utf-8') as f:
+        gpx = gpxpy.parse(f)
+
+    # Extract the points from the GPX route file
+    points = [(point.latitude, point.longitude)
+              for track in gpx.tracks
+              for segment in track.segments
               for point in segment.points]
 
     df_points = pd.DataFrame(points, columns=['latitude', 'longitude'])
     gdf_points = gpd.GeoDataFrame(df_points, geometry=gpd.points_from_xy(df_points.longitude, df_points.latitude))
-    gdf_points.crs = 'EPSG:4326'
+    gdf_points.crs = 'EPSG:4326'  # Ensure that the CRS is correctly defined
+    return gdf_points
 
-    geojson_dir = "/app/park_data/coordinates"
-    routes_dir = "/app/shared-data/routes"
 
-    for file in os.listdir(routes_dir):
-        os.remove(os.path.join(routes_dir, file))
+def segments_inside(gdf_points, within):
+    """Agrupa los puntos consecutivos dentro del parque en tramos [[lon, lat], ...]."""
+    segments = []
+    current = []
+    for (_, row), inside in zip(gdf_points.iterrows(), within):
+        if inside:
+            current.append([row['longitude'], row['latitude']])
+        elif current:
+            segments.append(current)
+            current = []
+    if current:
+        segments.append(current)
+    # Una LineString necesita al menos dos puntos
+    return [s for s in segments if len(s) >= 2]
 
-    if not os.path.exists(geojson_dir):
-        raise FileNotFoundError(f"No se encontró la carpeta GeoJSON: {geojson_dir}")
 
-    geojson_files = [f for f in os.listdir(geojson_dir) if f.endswith('.json')]
+def main():
+    if len(sys.argv) != 3:
+        log("Uso: CheckRoute.py <ruta.gpx> <directorio_geojson>")
+        return 1
+
+    gpx_path, geojson_dir = sys.argv[1], sys.argv[2]
+
+    try:
+        gdf_points = load_points(gpx_path)
+    except Exception as e:
+        log(f"Error al parsear el archivo GPX: {e}")
+        return 2
+
+    if gdf_points.empty:
+        log("El archivo GPX no contiene puntos de track")
+        return 2
+
+    if not os.path.isdir(geojson_dir):
+        log(f"Error: The folder was not found at the path: {geojson_dir}")
+        return 1
 
     parks = []
+    intersections = {}
 
-    for geojson_file in geojson_files:
+    for geojson_file in sorted(f for f in os.listdir(geojson_dir) if f.endswith('.json')):
+        park_name = os.path.splitext(geojson_file)[0]
         try:
-            file_path = os.path.join(geojson_dir, geojson_file)
-            gdf_park = gpd.read_file(file_path)
+            gdf_park = gpd.read_file(os.path.join(geojson_dir, geojson_file))
             park_polygon = gdf_park.geometry.union_all()
-            gdf_park.crs = 'EPSG:4326'
 
-            gdf_points['within_perimeter'] = gdf_points.within(park_polygon)
+            within = gdf_points.within(park_polygon)
 
-            park_name = os.path.splitext(geojson_file)[0]
-
-            if gdf_points['within_perimeter'].any():
+            # Verificar si algún punto de la ruta está dentro del parque
+            if within.any():
                 parks.append(park_name)
-
-                gpx_output = gpxpy.gpx.GPX()
-                gpx_output.name = f"Ruta dentro del parque natural {park_name}"
-
-                track = gpxpy.gpx.GPXTrack(name=f"Ruta {park_name}")
-                gpx_output.tracks.append(track)
-
-                segment = None
-                inside_park = False
-
-                for idx, row in gdf_points.iterrows():
-                    current_inside = row['within_perimeter']
-
-                    if current_inside:
-                        if not inside_park:
-                            segment = gpxpy.gpx.GPXTrackSegment()
-                            track.segments.append(segment)
-                            inside_park = True
-
-                        track_point = gpxpy.gpx.GPXTrackPoint(latitude=row['latitude'], longitude=row['longitude'])
-                        segment.points.append(track_point)
-                    elif inside_park:
-                        inside_park = False
-
-                if len(track.segments) > 0:
-                    output_file = f"{park_name}_points_within.gpx"
-                    output_path = os.path.join(routes_dir, output_file)
-                    with open(output_path, 'w') as f:
-                        f.write(gpx_output.to_xml())
-
+                segments = segments_inside(gdf_points, within)
+                if segments:
+                    intersections[park_name] = {"type": "MultiLineString", "coordinates": segments}
         except Exception as e:
-            print(f"Error al procesar el archivo {geojson_file}: {e}")
+            log(f"Error al procesar el archivo {geojson_file}: {e}")
 
-    os.remove(gpx_file)
+    print(json.dumps({"parks": parks, "intersections": intersections}))
+    return 0
 
-    print(json.dumps({"parks": parks}))
 
-except Exception as e:
-    error_message = str(e)
-    print(json.dumps({"error": error_message}))
-    sys.exit(1)
+if __name__ == "__main__":
+    sys.exit(main())

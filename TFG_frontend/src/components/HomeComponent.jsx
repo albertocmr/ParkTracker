@@ -1,84 +1,139 @@
 import React from 'react';
 
+const STEPS = [
+    { title: "Elige cómo harás la ruta", text: "Vehículo a motor, bicicleta o a pie: la normativa cambia según el medio." },
+    { title: "Carga tu archivo GPX", text: "La ruta se dibuja al momento sobre el mapa, junto a los perímetros de los parques." },
+    { title: "Inicia sesión y analízala", text: "Cruzamos tu recorrido con los 23 parques naturales de Andalucía." },
+    { title: "Consulta las restricciones", text: "Verás qué parques atraviesas, qué tramos quedan dentro y qué normas aplican." },
+];
+
+const STATS = [
+    { value: "23", label: "parques naturales" },
+    { value: "8", label: "zonas de reserva A" },
+    { value: "8", label: "provincias andaluzas" },
+];
+
+const TECH = ["Astro", "React", "Tailwind CSS", "Leaflet", "OpenStreetMap", "Spring Boot", "GeoPandas", "MySQL", "Auth0"];
+
 const HomeComponent = () => {
     return (
-        <div className="container bg-white p-4 space-y-12 rounded-xl">
-            <div className="grid md:grid-cols-2 gap-6 items-center">
-                <div className="bg-white shadow-xl p-4 rounded-2xl border transition-shadow hover:shadow-2xl duration-300 ease-in-out">
-                <h1 className="text-3xl font-bold text-gray-800 mb-3">
-                        ¡Bienvenido a parkTracker <span className="text-gray-500 text-2xl">website</span>!
-                    </h1>
-                    <p className="text-gray-700">
-                        <strong className=''>Explorar la naturaleza es un privilegio, protegerla es una responsabilidad.</strong><br></br>
-                        En esta página web encontrarás información sobre la normativa que debes tener en cuenta para disfrutar de manera responsable en los parques naturales de Andalucía.
-                    </p>                    
-                </div>
-                <div className="flex justify-center">
+        <>
+            {/* Hero */}
+            <section className="mx-auto max-w-6xl px-4 pt-6 sm:px-6 lg:pt-10">
+                <div className="relative isolate overflow-hidden rounded-[2rem] bg-pine-950">
                     <img
-                        alt="Paisaje del Parque Natural Sierra de Huétor en otoño, hecha por Pilar Flores"
-                        className="rounded-2xl shadow-lg max-w-full w-96"
                         src="/SierraHuetor_Otonio_Pilarflores.jpg"
+                        alt="Paisaje del Parque Natural Sierra de Huétor en otoño, fotografía de Pilar Flores"
+                        className="absolute inset-0 -z-10 h-full w-full object-cover opacity-60"
                     />
+                    <div className="absolute inset-0 -z-10 bg-gradient-to-r from-pine-950 via-pine-950/80 to-pine-950/10" />
+                    <div className="absolute inset-0 -z-10 bg-gradient-to-t from-pine-950/70 via-transparent to-transparent" />
+
+                    <div className="max-w-2xl px-6 py-20 sm:px-12 md:py-28 lg:py-32">
+                        <p className="eyebrow animate-fade-up text-pine-200">Parques naturales de Andalucía</p>
+                        <h1 className="mt-4 animate-fade-up font-display text-4xl font-medium leading-[1.08] text-paper-50 [animation-delay:80ms] sm:text-5xl lg:text-6xl">
+                            Recorre la naturaleza <em className="font-normal text-pine-200">sabiendo dónde pisas</em>.
+                        </h1>
+                        <p className="mt-6 max-w-xl animate-fade-up text-base leading-relaxed text-pine-50/80 [animation-delay:160ms] sm:text-lg">
+                            Sube tu ruta GPX y descubre en segundos si atraviesa algún espacio protegido y qué normativa
+                            debes respetar en cada tramo.
+                        </p>
+                        <div className="mt-9 flex animate-fade-up flex-wrap gap-3 [animation-delay:240ms]">
+                            <a href="/map" className="btn bg-paper-50 text-pine-950 shadow-lift hover:bg-white">
+                                Comprueba tu ruta
+                                <span aria-hidden="true">→</span>
+                            </a>
+                            <a href="/naturalParks" className="btn border border-white/20 text-paper-50 hover:bg-white/10">
+                                Explorar parques
+                            </a>
+                        </div>
+                    </div>
+
+                    <p className="absolute bottom-4 right-6 hidden text-[11px] text-white/50 sm:block">
+                        Sierra de Huétor en otoño · Foto: Pilar Flores
+                    </p>
                 </div>
-            </div>
 
-            <div className="bg-white shadow-md p-3 rounded-2xl border transition-shadow hover:shadow-2xl duration-300 ease-in-out">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-2">¿Cómo funciona?</h2>
-                <p className="text-gray-700 mb-4">
-                    Comprueba si la ruta que planeas realizar atraviesa alguno de los parques naturales de Andalucía y accede a la normativa vigente en cada zona protegida.
-                    Esta información te ayudará a planificar tu recorrido de forma responsable, evitando sanciones y contribuyendo a la conservación del entorno natural.
-                    Como usuario no registrado, podrás visualizar las rutas en el mapa. Sin embargo, para analizarlas y detectar intersecciones con los parques naturales, necesitas iniciar sesión.
-                </p>
+                {/* Cifras */}
+                <dl className="mx-auto -mt-10 grid max-w-3xl grid-cols-3 divide-x divide-pine-900/5 rounded-3xl border border-pine-900/5 bg-white/90 shadow-lift backdrop-blur sm:-mt-12">
+                    {STATS.map(({ value, label }) => (
+                        <div key={label} className="px-3 py-5 text-center sm:py-6">
+                            <dt className="sr-only">{label}</dt>
+                            <dd className="font-display text-3xl text-pine-900 sm:text-4xl">{value}</dd>
+                            <dd className="mt-1 text-xs text-pine-900/60 sm:text-sm">{label}</dd>
+                        </div>
+                    ))}
+                </dl>
+            </section>
 
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Pasos para comprobar tu ruta:</h3>
-                <ol className="list-decimal list-inside text-gray-700 space-y-1">
-                    <li><strong>Selecciona el medio de transporte:</strong> Elige si harás la ruta en vehículo a motor, bicicleta o caminando.</li>
-                    <li><strong>Selecciona tu archivo GPX:</strong> Asegúrate de que contiene la ruta deseada. Se visualizará en el mapa.</li>
-                    <li><strong>Inicia sesión:</strong> Inicia sesión para poder acceder a las siguientes funcionalidades avanzadas.</li>
-                    <li><strong>Comprueba tu ruta:</strong> Compara tu ruta con los parques naturales y determina las restricciones.</li>
-                    <li><strong>Consulta las restricciones:</strong> Visualiza qué limitaciones se aplican a la ruta.</li>
-                    <li><strong>Genera y visualiza intersecciones:</strong> Comprueba sobre el mapa los tramos de tu ruta que se encuentran dentro de los límites establecidos en los parques naturales.</li>
+            {/* Cómo funciona */}
+            <section className="mx-auto max-w-6xl px-4 pt-24 sm:px-6">
+                <div className="max-w-2xl">
+                    <p className="eyebrow">Cómo funciona</p>
+                    <h2 className="mt-3 text-3xl font-medium sm:text-4xl">Cuatro pasos para planificar con responsabilidad</h2>
+                    <p className="mt-4 leading-relaxed text-pine-900/70">
+                        Como usuario no registrado puedes visualizar tus rutas en el mapa. Para analizarlas y detectar
+                        intersecciones con los parques naturales, inicia sesión.
+                    </p>
+                </div>
+
+                <ol className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                    {STEPS.map(({ title, text }, i) => (
+                        <li key={title} className="card group p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lift">
+                            <span className="font-display text-sm text-pine-400">0{i + 1}</span>
+                            <h3 className="mt-6 font-sans text-base font-semibold text-pine-950">{title}</h3>
+                            <p className="mt-2 text-sm leading-relaxed text-pine-900/65">{text}</p>
+                        </li>
+                    ))}
                 </ol>
-            </div>
+            </section>
 
-
-
-
-            <div className="bg-white shadow-md p-3 rounded-2xl border transition-shadow hover:shadow-2xl duration-300 ease-in-out">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-2">¿Por qué usar parkTracker?</h2>
-                <p className="text-gray-700">
-                ParkTracker te permite planificar rutas de manera responsable, centralizando la información sobre la normativa relacionada con el <strong>Uso público, Turismo activo, Ecoturismo 
-                y Educación ambiental</strong>. Esta normativa se recoge en los planes <i>Plan de Ordenación de los Recursos Naturales (PORN)</i> y <i>Plan Rector de Uso y Gestión (PRUG)</i>, los cuales aplican 
-                a cada parque natural de la comunidad autónoma de Andalucía.
-
-
-                </p>
-            </div>
-
-            <div className="bg-white shadow-md p-3 rounded-2xl border transition-shadow hover:shadow-2xl duration-300 ease-in-out">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-2">Sobre el proyecto</h2>
-                <p className="text-gray-700">
-                    Esta aplicación fue desarrollada por Alberto Cámara como parte del Trabajo Fin de Grado de la Universidad de Granada. Puedes contactar conmigo en la siguiente dirección de correo: <a href="parktracker.contact@gmail.com" className="text-blue-600 underline">parktracker.contact@gmail.com</a>
-                </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white shadow-md p-3 rounded-2xl border transition-shadow hover:shadow-2xl duration-300 ease-in-out">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-2">¿Qué tecnologías se han utilizado?</h2>
-                    <p className="text-gray-700">
-                    La aplicación está construida con <strong>React y Astro</strong>, con una interfaz personalizada usando <strong>Bootstrap y Tailwind CSS</strong>. Utiliza <strong>OpenStreetMap</strong> para mostrar rutas y los perímetros de los parques naturales,
-                    con una visualización dinámica sobre el mapa gracias a la biblioteca <strong>Leaflet</strong>. Para la generación de archivos GPX se emplea la herramienta de código abierto <strong>OSRM</strong>.
-                    </p>
+            {/* Por qué */}
+            <section className="mx-auto max-w-6xl px-4 pt-24 sm:px-6">
+                <div className="grid items-center gap-10 rounded-[2rem] bg-pine-100/60 p-8 sm:p-12 lg:grid-cols-2 lg:gap-16">
+                    <div>
+                        <p className="eyebrow">Por qué ParkTracker</p>
+                        <h2 className="mt-3 text-3xl font-medium sm:text-4xl">La normativa, en un solo lugar</h2>
+                    </div>
+                    <div className="space-y-4 leading-relaxed text-pine-900/75">
+                        <p>
+                            Centralizamos la normativa sobre <strong className="font-semibold text-pine-950">uso público, turismo activo,
+                            ecoturismo y educación ambiental</strong> de cada parque natural andaluz.
+                        </p>
+                        <p>
+                            Toda la información procede del <em>Plan de Ordenación de los Recursos Naturales</em> (PORN) y del
+                            <em> Plan Rector de Uso y Gestión</em> (PRUG) de cada espacio. Así evitas sanciones y contribuyes a su conservación.
+                        </p>
+                    </div>
                 </div>
-                <div className="bg-white shadow-md p-3 rounded-2xl border transition-shadow hover:shadow-2xl duration-300 ease-in-out">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-2">¿Cómo se ha desarrollado?</h2>
-                    <p className="text-gray-700">
-                        Se ha desarrollado mediante los conocimientos aprendidos durante el Grado de Ingeniería Informática y mediante el estudio constante de nuevas tecnologías aprendidas durante
-                        la realización de este portal web. Se ha hecho un seguimiento continuo mediante <strong>GitHub</strong>, cuyo repositorio se puede consultar clicando el icono de Github que se encuentra en la esquina inferior derecha.
-                    </p>
+            </section>
+
+            {/* Sobre el proyecto */}
+            <section className="mx-auto max-w-6xl px-4 pt-24 sm:px-6">
+                <div className="grid gap-5 lg:grid-cols-3">
+                    <div className="card p-8 lg:col-span-2">
+                        <p className="eyebrow">Sobre el proyecto</p>
+                        <h2 className="mt-3 text-2xl font-medium sm:text-3xl">Un Trabajo Fin de Grado de la Universidad de Granada</h2>
+                        <p className="mt-4 leading-relaxed text-pine-900/70">
+                            Desarrollado por Alberto Cámara a partir de lo aprendido en el Grado en Ingeniería Informática y del
+                            estudio continuo de nuevas tecnologías. Las rutas se pueden crear con <strong className="font-semibold text-pine-950">OSRM</strong>,
+                            una herramienta de código abierto, y el seguimiento del proyecto se ha hecho en GitHub.
+                        </p>
+                        <a href="mailto:parktracker.contact@gmail.com" className="btn-secondary mt-6">
+                            parktracker.contact@gmail.com
+                        </a>
+                    </div>
+                    <div className="card p-8">
+                        <p className="eyebrow">Tecnologías</p>
+                        <ul className="mt-5 flex flex-wrap gap-2">
+                            {TECH.map((t) => (
+                                <li key={t} className="rounded-full bg-paper px-3 py-1.5 text-xs font-medium text-pine-800">{t}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </>
     );
 };
 

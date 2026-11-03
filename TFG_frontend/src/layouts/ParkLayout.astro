@@ -1,0 +1,45 @@
+---
+import Layout from "./Layout.astro";
+import { PARKS } from "../data/parks.js";
+
+const { slug, pornUrl } = Astro.props;
+const park = PARKS[slug] ?? { name: slug.replace(/_/g, " "), province: "" };
+---
+
+<Layout title={park.name} description={`Normativa de uso público y turismo del Parque Natural ${park.name}.`}>
+  <div class="mx-auto max-w-4xl px-4 pt-10 sm:px-6">
+    <nav aria-label="Migas de pan" class="flex items-center gap-2 text-sm text-pine-900/55">
+      <a href="/naturalParks" class="hover:text-pine-950">Parques naturales</a>
+      <span aria-hidden="true">/</span>
+      <span class="text-pine-950">{park.name}</span>
+    </nav>
+
+    <header class="mt-6">
+      {park.province && <p class="eyebrow">{park.province}</p>}
+      <h1 class="mt-3 text-4xl font-medium sm:text-5xl">Parque Natural {park.name}</h1>
+      <p class="mt-4 max-w-2xl leading-relaxed text-pine-900/70">
+        Normativa sobre uso público, turismo activo, ecoturismo y educación ambiental para vehículos a motor, bicicleta y senderismo.
+      </p>
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a href="/map" class="btn-primary">Comprobar una ruta</a>
+        {pornUrl && (
+          <a href={pornUrl} target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            Planes PORN y PRUG <span aria-hidden="true">↗</span>
+          </a>
+        )}
+      </div>
+    </header>
+
+    <article class="restrictions card mt-10 p-6 sm:p-10">
+      <slot />
+    </article>
+
+    <aside class="mt-6 rounded-3xl bg-pine-100/60 px-6 py-5 text-sm leading-relaxed text-pine-900/75 sm:px-8">
+      <p>
+        <strong class="font-semibold text-pine-950">¿Necesitas una autorización?</strong> Las filmaciones, acampadas organizadas o eventos
+        deportivos deben solicitarse a la Delegación Territorial de la Consejería competente en medio ambiente. Consulta el procedimiento en la
+        <a href="https://www.juntadeandalucia.es/servicios/sede/tramites/procedimientos/detalle/727.html" target="_blank" rel="noopener noreferrer" class="font-medium text-pine-700 underline decoration-pine-300 underline-offset-4 hover:text-pine-900">web oficial de la Junta de Andalucía</a>.
+      </p>
+    </aside>
+  </div>
+</Layout>

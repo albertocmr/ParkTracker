@@ -1,26 +1,45 @@
 ---
 const createUrl = 'https://map.project-osrm.org/?z=8&center=37.175637%2C-4.493408&hl=es&alt=0&srv=0';
+
+const steps = [
+  { title: "Elige el perfil", text: "En el desplegable azul, arriba a la izquierda del mapa, indica si irás en coche, bicicleta o a pie." },
+  { title: "Marca el recorrido", text: "Pulsa sobre el mapa para fijar el punto de inicio y el de llegada. OSRM calculará la ruta." },
+  { title: "Exporta a GPX", text: "Usa el botón de exportar del menú inferior izquierdo para descargar tu track en .gpx." },
+  { title: "Compruébala", text: "Súbela en «Comprueba tu ruta» para ver qué parques naturales atraviesa." },
+];
 ---
 
-<div class="container bg-white p-4 d-flex flex-wrap justify-content-center rounded-xl">
-  <div class="bg-white shadow-xl p-4 rounded-2xl border mb-5">
-    <h1 class="fs-3 text-center mb-2"><strong>Crea tu propia ruta GPX</strong></h1>
-                
-    <p class="text-gray-700 mb-4">
-      En esta sección podrás crear tu propia ruta y exportarla a formato GPX para así, poder cargarla en el apartado de 'Carga una ruta'. <strong>Utilizamos un mapa de la página web OSRM</strong>. Lo primero que debes de hacer
-      es indicar en la parte superior izquierda del mapa, en el desplegable azul, cuál será tu medio de transporte durante la ruta (coche, bicicleta o peatón). Una vez seleccionado, el motor que controla al mapa
-      podrá calcular la ruta de manera efectiva. Para ello, debes marcar tanto el punto de inicio como el punto final de la ruta. Una vez hecho esto, debes exportar tu ruta a un archivo .GPX, cuentas con un botón
-      para ello en el menú que se encuentra en la parte inferior izquierda del mapa. Una vez hecho esto, se exportará tu 'track' a un archivo .GPX que podrás cargar en <strong>'Carga una ruta'</strong>.
+<div class="mx-auto max-w-7xl px-4 pt-10 sm:px-6">
+  <div class="max-w-2xl">
+    <p class="eyebrow">Planificador</p>
+    <h1 class="mt-3 text-4xl font-medium sm:text-5xl">Crea tu propia ruta</h1>
+    <p class="mt-4 leading-relaxed text-pine-900/70">
+      Diseña tu recorrido con el mapa de <strong class="font-semibold text-pine-950">OSRM</strong>, un motor de rutas de código abierto,
+      y expórtalo en formato GPX.
     </p>
-    <div class="border p-1">
+  </div>
+
+  <div class="mt-10 grid gap-6 lg:grid-cols-[320px_1fr]">
+    <ol class="card h-fit space-y-6 p-6 sm:p-7">
+      {steps.map(({ title, text }, i) => (
+        <li class="relative pl-11">
+          <span class="absolute left-0 top-0 flex h-7 w-7 items-center justify-center rounded-full bg-pine-100 text-xs font-semibold text-pine-700">{i + 1}</span>
+          <h2 class="font-sans text-sm font-semibold text-pine-950">{title}</h2>
+          <p class="mt-1.5 text-sm leading-relaxed text-pine-900/65">{text}</p>
+        </li>
+      ))}
+      <li class="pt-2">
+        <a href="/map" class="btn-primary w-full">Ir a comprobar mi ruta <span aria-hidden="true">→</span></a>
+      </li>
+    </ol>
+
+    <div class="card isolate h-[560px] overflow-hidden p-0 lg:h-[680px]">
       <iframe
         src={createUrl}
-        class="mx-auto d-block"
-        style="width: 80%; height: 50vh; max-width: 900px; border: 2px solid black;"
-        title="Mapa con OSRM"
+        class="h-full w-full border-0"
+        title="Mapa de OSRM para crear rutas"
         allowfullscreen
       ></iframe>
     </div>
-
   </div>
 </div>

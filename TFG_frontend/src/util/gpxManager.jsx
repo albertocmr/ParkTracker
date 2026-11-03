@@ -2,22 +2,18 @@
 import * as toGeoJSON from '@mapbox/togeojson';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import axios from 'axios';
+import { formatParkName } from './ParkNameFormatter';
 
+// Lee un archivo GPX, lo dibuja en el mapa y encuadra la vista sobre la ruta.
+// notify(tipo, mensaje) informa al usuario sin bloquear la página.
+export const addGPXToMap = (file, map, setSelectedGPXFile, gpxLayers, setGpxLayers, notify) => {
+    if (!file) return;
 
-export const addGPXToMap = (event, map, setSelectedGPXFile, gpxLayers, setGpxLayers, selectedMethod) => {
-
-    if(!selectedMethod || selectedMethod === ""){
-        alert(`Antes de subir la ruta, debes seleccionar el transporte en el que se va a realizar.`)
+    if (!file.name.toLowerCase().endsWith('.gpx')) {
+        notify('error', 'El archivo debe tener extensión .gpx.');
         return;
     }
 
-    const file = event.target.files[0];
-
-
-    if (!file) return;
-
-    setSelectedGPXFile(file);
     const reader = new FileReader();
     reader.onload = function (e) {
         const parser = new DOMParser();
@@ -28,9 +24,9 @@ export const addGPXToMap = (event, map, setSelectedGPXFile, gpxLayers, setGpxLay
         try {
             const gpxLayer = L.geoJSON(geojson, {
                 style: {
-                    color: '#00ffff',
-                    weight: 4,
-                    opacity: 1,
+                    color: '#1f3a2e',
+                    weight: 3,
+                    opacity: 0.9,
                 },
                 onEachFeature: (feature, layer) => {
                     if (feature.properties && feature.properties.name) {
@@ -39,12 +35,21 @@ export const addGPXToMap = (event, map, setSelectedGPXFile, gpxLayers, setGpxLay
                 },
             }).addTo(map);
 
-            setGpxLayers((prevLayers) => [...prevLayers, gpxLayer]);
+            const bounds = gpxLayer.getBounds();
+            if (!bounds.isValid()) {
+                map.removeLayer(gpxLayer);
+                notify('error', 'El archivo no contiene ningún track que se pueda dibujar.');
+                return;
+            }
 
+            map.fitBounds(bounds, { padding: [40, 40] });
+            setSelectedGPXFile(file);
+            setGpxLayers([gpxLayer]);
+            notify('success', `Ruta «${file.name}» cargada en el mapa.`);
         } catch (error) {
             console.error("Error adding the GPX file to the map:", error);
+            notify('error', 'No se ha podido leer el archivo GPX.');
         }
-        alert(`Archivo GPX ${file.name} cargado sobre el mapa correctamente.`);
     };
     reader.readAsText(file);
 };
@@ -58,100 +63,31 @@ export const removeGPXLayers = (map, gpxLayers, setGpxLayers) => {
     setGpxLayers([]);
 }
 
-export const uploadGPXFile = async (selectedGPXFile, setLoadingScript) => {
-    if (!selectedGPXFile) {
-        return false;
+// Dibuja los tramos de la ruta que caen dentro de cada parque,
+// tal y como los devolvió el análisis (GeoJSON por parque).
+export const addIntersectionsToMap = (map, intersections, setGpxLayers, notify) => {
+    if (!map) return;
+
+    const entries = Object.entries(intersections || {});
+    if (entries.length === 0) {
+        notify('info', 'No hay tramos dentro de parques naturales que mostrar.');
+        return;
     }
 
-    const formData = new FormData();
-    formData.append("route", selectedGPXFile);
-
-    try {
-        const response = await axios.post(`https://parktracker.onrender.com/api/gpx/upload`, formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data',
+    const group = L.featureGroup();
+    for (const [park, geometry] of entries) {
+        L.geoJSON(geometry, {
+            style: {
+                color: '#c4622d',
+                weight: 6,
+                opacity: 1,
+                lineCap: 'round',
             },
-        });
-        setLoadingScript(true);
-
-        //console.log(response.data);
-        return true;
-
-        //alert(`Archivo GPX ${selectedGPXFile.name} subido correctamente.`);
-    } catch (error) {
-        console.error('Error al subir el archivo:', error);
-        if (error.response && error.response.status === 401) {
-            alert("Necesitas loguearte para poder subir archivos GPX.");
-            return;
-        } else {
-            alert(`Error al subir el archivo: ${error.message}`);
-        }
-        setLoadingScript(false);
-        return false;
-    }
-};
-
-export const fetchAndAddGPXFiles = async (map, selectedGPXFile, setGpxLayers) => {
-    if (!selectedGPXFile) {
-        alert("Por favor ejecuta el script para generar las intersecciones.");
-        return;
+        }).bindPopup(formatParkName(park)).addTo(group);
     }
 
-    if (!map) {
-        alert("El mapa no está inicializado.");
-        return;
-    }
-
-    try {
-        const res = await axios.get(`https://parktracker.onrender.com/api/gpx/list`);
-
-        if (res.status === 401) {
-            alert("Necesitas loguearte para poder generar archivos GPX.");
-            return;
-        }
-
-        const fileList = res.data;
-        //console.log("Archivos GPX recibidos:", fileList);
-
-        if (!fileList || fileList.length === 0) {
-            alert("No se encontraron archivos GPX con intersecciones en el servidor.");
-            return;
-        }
-
-        for (const file of fileList) {
-            const url = `https://parktracker.onrender.com/shared-data/routes/${file}`;
-            const response = await fetch(url);
-
-            if (!response.ok) {
-                console.error(`Error al cargar el archivo ${file}:`, file);
-                continue;
-            }
-            const gpxText = await response.text();
-
-            const parser = new DOMParser();
-            const xml = parser.parseFromString(gpxText, 'application/xml');
-            const geojson = toGeoJSON.gpx(xml);
-            const gpxLayer = L.geoJSON(geojson, {
-                style: {
-                    color: '#ff2200',
-                    weight: 5,
-                    opacity: 1,
-                },
-            });
-
-            gpxLayer.addTo(map);
-            setGpxLayers((prev) => [...prev, gpxLayer]);
-
-            //console.log(`Cargado: ${file}`);
-        }
-
-        alert("GPX cargados correctamente.");
-    } catch (err) {
-        if (err.response && err.response.status === 401) {
-            alert("Necesitas loguearte para poder generar archivos GPX.");
-            return;
-        }
-
-        alert("Ocurrió un error al cargar los archivos GPX.");
-    }
+    group.addTo(map);
+    map.fitBounds(group.getBounds(), { padding: [60, 60] });
+    setGpxLayers((prev) => [...prev, group]);
+    notify('success', 'Tramos dentro de parques naturales resaltados en el mapa.');
 };

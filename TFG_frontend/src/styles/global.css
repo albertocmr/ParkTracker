@@ -2,138 +2,181 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .card-container {
-    @apply bg-white shadow-xl rounded-2xl border border-black mt-4 p-3;
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-display tracking-tight text-pine-950;
+  }
+
+  ::selection {
+    @apply bg-pine-200 text-pine-950;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-pine-500 ring-offset-2 ring-offset-paper;
   }
 }
 
-/* Estilos Mapa */
+@layer components {
+  /* Botones */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold
+      transition duration-200 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-pine-800 text-paper-50 shadow-soft hover:bg-pine-700 active:bg-pine-900;
+  }
+  .btn-secondary {
+    @apply btn border border-pine-800/15 bg-white text-pine-900 hover:border-pine-800/30 hover:bg-pine-50;
+  }
+  .btn-ghost {
+    @apply btn text-pine-800 hover:bg-pine-800/5;
+  }
+  .btn-danger {
+    @apply btn border border-clay-500/20 bg-clay-50 text-clay-600 hover:bg-clay-100;
+  }
+  .btn-sm {
+    @apply px-3.5 py-1.5 text-xs;
+  }
+
+  /* Superficies */
+  .card {
+    @apply rounded-3xl border border-pine-900/5 bg-white shadow-soft;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-pine-500;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-pine-900/10 bg-white px-4 py-2.5 text-sm text-ink
+      placeholder:text-pine-900/35 transition focus:border-pine-500 focus:outline-none focus:ring-4 focus:ring-pine-500/10;
+  }
+
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-pine-900;
+  }
+
+  .spinner {
+    @apply inline-block h-5 w-5 animate-spin rounded-full border-2 border-current border-r-transparent;
+  }
+}
+
+/* ---------- Mapa (Leaflet) ---------- */
 #map {
-    width: 80%;
-    height: 50vh;
-    max-width: 900px;
-    border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  z-index: 0;
 }
 
-.map-container {
+.leaflet-container {
+  font-family: "Inter", system-ui, sans-serif;
+  background: #e8e4da;
+}
+
+/* Suaviza el mapa base para que destaquen la ruta y los parques */
+.leaflet-tile-pane {
+  filter: saturate(0.55) contrast(0.95) brightness(1.03);
+}
+
+.leaflet-control-layers,
+.leaflet-bar {
+  border: none !important;
+  border-radius: 14px !important;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(20, 40, 32, 0.06), 0 8px 24px -8px rgba(20, 40, 32, 0.25) !important;
+}
+
+.leaflet-control-layers-expanded {
+  padding: 10px 14px !important;
+  font-size: 13px;
+  color: #142820;
+}
+
+.leaflet-control-layers-overlays label {
   display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-  margin-top: 20px;
-}
-
-.leaflet-control-layers {
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0;
+  cursor: pointer;
 }
 
 .leaflet-control-layers-overlays label:hover {
-  color: #007bff;
-  cursor: pointer;
+  color: #335e48;
 }
 
-
-
-/* Estilos Parques Naturales */
-article {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.leaflet-bar a {
+  color: #142820 !important;
 }
 
-article:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  font-weight: 500;
 }
 
-h3 {
-  font-size: 1.5rem;
-  color: #333;
-  font-weight: 600;
-  margin-bottom: 1rem;
+/* ---------- Normativa de los parques ----------
+   Los componentes de src/assets/restrictions usan clases heredadas de Bootstrap
+   (container, card-container, list-group...). Aquí se les da el estilo actual sin
+   tener que tocar los 23 ficheros con la normativa. */
+.restrictions .container {
+  max-width: none;
+  padding: 0;
+  box-shadow: none;
 }
 
-p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
-  margin-bottom: 1rem;
+.restrictions section,
+.restrictions .list-group {
+  border-width: 0;
 }
 
-.btn {
-  display: inline-block;
-  color: #fff;
-  padding: 6px 12px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-align: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+.restrictions .card-container {
+  @apply space-y-6;
 }
 
-.btn:hover {
-  transform: scale(1.025);
+.restrictions h3 {
+  @apply font-display text-2xl text-pine-950 md:text-3xl;
 }
 
-.btn-danger {
-  transition: background-color 0.3s ease, transform 0.2s ease;
+.restrictions h4:not(section h4) {
+  @apply -mt-3 inline-flex items-center gap-2 rounded-full bg-pine-50 px-3.5 py-1.5 font-sans text-xs font-semibold text-pine-700;
 }
 
-.btn-danger:hover {
-  background-color: #c82333;
+.restrictions section {
+  @apply rounded-2xl bg-paper-50 p-5 md:p-6;
 }
 
-
-
-/* Estilos Parque Natural */
-.dropdown {
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.restrictions section h2,
+.restrictions section h4 {
+  @apply mb-4 flex items-center gap-3 font-display text-lg text-pine-900 md:text-xl;
 }
 
-.dropdown-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 16px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+.restrictions section h2::before,
+.restrictions section h4::before {
+  content: "";
+  @apply h-5 w-1 shrink-0 rounded-full bg-pine-500;
 }
 
-.dropdown-item:hover {
-  background-color: #e0e0e0;
+.restrictions section u {
+  @apply no-underline;
 }
 
-.icon {
-  font-size: 1.3rem;
+.restrictions .list-group {
+  @apply m-0 list-none space-y-2.5 p-0;
 }
 
-.dropdown-content {
-  padding-left: 16px;
-  margin-top: 10px;
-  border-left: 4px solid #007BFF;
-  transition: max-height 0.3s ease-in-out;
-  overflow: hidden;
+.restrictions .list-group-item {
+  @apply relative rounded-xl bg-white py-3 pl-11 pr-4 text-[0.94rem] leading-relaxed text-ink/85 shadow-[0_1px_2px_rgba(20,40,32,0.05)];
 }
 
-.dropdown-content.expanded {
-  max-height: 500px;
-  transition: max-height 0.5s ease-in-out;
+.restrictions .list-group-item::before {
+  content: "";
+  @apply absolute left-4 top-[1.15rem] h-2 w-2 rounded-full bg-pine-400 ring-4 ring-pine-100;
 }
-
-/* Modal Estilos */
-.custom-modal-body {
-  max-height: 700px;
-  overflow-y: auto;
-}
-

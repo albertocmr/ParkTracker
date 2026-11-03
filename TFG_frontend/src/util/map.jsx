@@ -1,11 +1,14 @@
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import { API_URL } from '../config';
 import geojsonDataA from '../assets/coordinates/reserva_A/geojsonImportsA.js';
 
 export const initializeMap = async (setMap) => {
-    const initializedMap = L.map('map').setView([37.5, -4.5], 6.5);
+    const initializedMap = L.map('map', { zoomControl: false }).setView([37.4, -4.5], 7);
 
-    L.tileLayer('https://c.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.control.zoom({ position: 'bottomright' }).addTo(initializedMap);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(initializedMap);
@@ -16,8 +19,10 @@ export const initializeMap = async (setMap) => {
         Object.values(geojsonData).map((data) =>
             L.geoJSON(data, {
                 style: {
-                    color: '#000000',
-                    weight: 2
+                    color: '#335e48',
+                    weight: 1.5,
+                    fillColor: '#44765b',
+                    fillOpacity: 0.12,
                 },
             }),
         ),
@@ -27,25 +32,30 @@ export const initializeMap = async (setMap) => {
         Object.values(geojsonDataA).map((data) =>
             L.geoJSON(data, {
                 style: {
-                    color: '#ff0000',
-                    weight: 2
+                    color: '#a54d20',
+                    weight: 1.5,
+                    dashArray: '4 4',
+                    fillColor: '#c4622d',
+                    fillOpacity: 0.1,
                 },
             }),
         ),
     );
 
-    L.control.layers(null, {
-        "Perímetros Parques Naturales": perimetersLayerGroup,
-        "Zonas de Reserva A": perimetersALayerGroup,
-    }).addTo(initializedMap);
+    perimetersLayerGroup.addTo(initializedMap);
 
-    L.control.scale().addTo(initializedMap);
+    L.control.layers(null, {
+        "Parques naturales": perimetersLayerGroup,
+        "Zonas de reserva A": perimetersALayerGroup,
+    }, { position: 'topright' }).addTo(initializedMap);
+
+    L.control.scale({ position: 'bottomleft', imperial: false }).addTo(initializedMap);
 
     setMap(initializedMap);
 }
 
 export async function loadGeojsonDataFromBackend() {
-    const response = await fetch(`https://parktracker.onrender.com/api/perimeters`);
+    const response = await fetch(`${API_URL}/api/perimeters`);
 
     if (!response.ok) {
         console.warn("Error al obtener perímetros:", response.status, response.statusText);
