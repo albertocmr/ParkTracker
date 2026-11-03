@@ -1,5 +1,7 @@
 # Dependabot abre PRs semanales con las actualizaciones de dependencias (y al momento las de seguridad).
-# Las de cada ecosistema se agrupan en un solo PR para que sea fácil revisarlas y probarlas juntas.
+# Las versiones menores y parches de cada ecosistema se agrupan en un solo PR, fácil de revisar y probar.
+# Las versiones mayores llegan cada una en su propio PR: suelen exigir cambios en el código y, si van
+# agrupadas, una sola que rompa la build bloquea todas las demás.
 version: 2
 updates:
   - package-ecosystem: maven
@@ -8,7 +10,7 @@ updates:
       interval: weekly
     groups:
       backend:
-        patterns: ["*"]
+        update-types: [minor, patch]
 
   - package-ecosystem: pip
     directory: /TFG_backend
@@ -16,7 +18,7 @@ updates:
       interval: weekly
     groups:
       python:
-        patterns: ["*"]
+        update-types: [minor, patch]
 
   - package-ecosystem: npm
     directory: /TFG_frontend
@@ -24,12 +26,25 @@ updates:
       interval: weekly
     groups:
       frontend:
-        patterns: ["*"]
+        update-types: [minor, patch]
+    ignore:
+      # Tailwind 4 cambia la integración con PostCSS y el formato de configuración:
+      # es una migración manual (tailwind.config.js -> CSS), no una actualización automática
+      - dependency-name: tailwindcss
+        update-types: [version-update:semver-major]
 
   - package-ecosystem: docker
     directories: [/TFG_backend, /TFG_frontend]
     schedule:
       interval: weekly
+    ignore:
+      # Java solo se actualiza entre versiones LTS (21 -> 25), a mano y probando el arranque con AppCDS.
+      # Sin esto Dependabot propone versiones sin soporte largo como 24 o 26.
+      - dependency-name: eclipse-temurin
+        update-types: [version-update:semver-major]
+      # La imagen de Maven solo compila y lleva la versión de Java en la etiqueta (…-temurin-21-noble):
+      # se actualiza junto con eclipse-temurin
+      - dependency-name: maven
 
   - package-ecosystem: github-actions
     directory: /
