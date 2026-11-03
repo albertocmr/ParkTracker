@@ -11,7 +11,7 @@ COPY src ./src
 RUN mvn -q clean package -DskipTests
 
 # --- Fase 2: imagen de ejecución (JRE + Python para CheckRoute.py) ---
-FROM eclipse-temurin:21-jre-noble
+FROM eclipse-temurin:24-jre-noble
 
 # upgrade aplica los parches de seguridad del sistema publicados después de la imagen base
 RUN apt-get update \
