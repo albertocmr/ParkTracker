@@ -1,0 +1,36 @@
+# Blueprint de Render para el backend (plan gratuito).
+# Los datos de conexión de Aiven se piden al crear el Blueprint (sync: false) y no se guardan en el repositorio.
+services:
+  - type: web
+    name: parktracker-backend
+    runtime: docker
+    plan: free
+    region: frankfurt
+    branch: main
+    dockerfilePath: ./TFG_backend/Dockerfile
+    dockerContext: ./TFG_backend
+    # Solo se redespliega cuando cambia el backend
+    buildFilter:
+      paths:
+        - TFG_backend/**
+    healthCheckPath: /api/perimeters
+    envVars:
+      - key: PORT
+        value: "8080"
+      # jdbc:mysql://<host>:<puerto>/defaultdb?sslMode=REQUIRED
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: SPRING_JPA_HIBERNATE_DDL_AUTO
+        value: update
+      - key: SPRING_JPA_OPEN_IN_VIEW
+        value: "false"
+      - key: SPRING_SERVLET_MULTIPART_MAX_FILE_SIZE
+        value: 10MB
+      - key: SPRING_SERVLET_MULTIPART_MAX_REQUEST_SIZE
+        value: 10MB
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://parktracker.vercel.app

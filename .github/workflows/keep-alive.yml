@@ -1,0 +1,18 @@
+# Evita que el backend del plan gratuito de Render se duerma tras 15 minutos sin tráfico.
+# Solo actúa si existe la variable de repositorio BACKEND_URL (Settings → Secrets and variables → Actions → Variables),
+# p. ej. https://parktracker-backend.onrender.com
+name: Mantener despierto el backend
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    if: ${{ vars.BACKEND_URL != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Ping al backend
+        run: curl --silent --show-error --fail --max-time 180 --retry 2 "${{ vars.BACKEND_URL }}/api/perimeters" -o /dev/null

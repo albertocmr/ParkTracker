@@ -28,7 +28,23 @@ WORKDIR /app
 
 COPY src/scripts/CheckRoute.py /app/scripts/CheckRoute.py
 COPY park_data /app/park_data
-COPY --from=build /build/target/TFG_backend-0.0.1-SNAPSHOT.jar /app/TFG_backend.jar
+
+# Opciones de la JVM para arrancar rápido con poca CPU (p. ej. 0,1 CPU en Render Free):
+# solo el compilador C1, GC serie y heap acotado a la memoria del contenedor
+ENV JAVA_OPTS="-XX:TieredStopAtLevel=1 -XX:+UseSerialGC -XX:MaxRAMPercentage=65 -Xss512k"
+
+# Se extrae el jar y se genera un archivo AppCDS con un arranque de entrenamiento.
+# El entrenamiento no conecta con la base de datos: se detiene al refrescar el contexto
+# y Hibernate no consulta metadatos JDBC.
+COPY --from=build /build/target/TFG_backend-0.0.1-SNAPSHOT.jar /tmp/app.jar
+RUN java -Djarmode=tools -jar /tmp/app.jar extract --destination /app/application \
+    && rm /tmp/app.jar \
+    && java $JAVA_OPTS -XX:ArchiveClassesAtExit=/app/application/app.jsa -Dspring.context.exit=onRefresh \
+        -jar /app/application/app.jar \
+        --spring.datasource.url=jdbc:mysql://localhost:3306/cds \
+        --spring.jpa.hibernate.ddl-auto=none \
+        --spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect \
+        --spring.jpa.properties.hibernate.boot.allow_jdbc_metadata_access=false
 
 # Usuario sin privilegios
 RUN useradd --system --no-create-home parktracker
@@ -37,4 +53,4 @@ USER parktracker
 # Expón el puerto en el que Spring Boot está corriendo
 EXPOSE 8080
 
-CMD ["java", "-jar", "/app/TFG_backend.jar"]
+CMD ["sh", "-c", "exec java $JAVA_OPTS -XX:SharedArchiveFile=/app/application/app.jsa -jar /app/application/app.jar"]
