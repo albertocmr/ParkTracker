@@ -25,7 +25,14 @@ def log(msg):
 
 def load_points(gpx_path):
     with open(gpx_path, 'r', encoding='utf-8') as f:
-        gpx = gpxpy.parse(f)
+        content = f.read()
+
+    # Un GPX legítimo no necesita DTD ni entidades. Rechazarlos evita ataques XML
+    # (expansión de entidades tipo "billion laughs", entidades externas) antes de parsear.
+    if '<!DOCTYPE' in content.upper() or '<!ENTITY' in content.upper():
+        raise ValueError("el GPX contiene una declaración DOCTYPE/ENTITY")
+
+    gpx = gpxpy.parse(content)
 
     # Extract the points from the GPX route file
     points = [(point.latitude, point.longitude)

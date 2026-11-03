@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
 import org.springframework.context.annotation.Import;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.context.DynamicPropertyRegistry;
@@ -93,6 +93,15 @@ class RouteCheckControllerTest {
     void invalidGpxReturnsBadRequest() throws Exception {
         Assumptions.assumeTrue(TEST_PYTHON != null, "PARKTRACKER_TEST_PYTHON no definido");
         mvc.perform(multipart("/api/routes/check").file(gpx("r.gpx", "no es xml")).with(jwt()))
+           .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    void gpxWithXmlEntitiesIsRejected() throws Exception {
+        Assumptions.assumeTrue(TEST_PYTHON != null, "PARKTRACKER_TEST_PYTHON no definido");
+        String bomb = "<?xml version=\"1.0\"?><!DOCTYPE gpx [<!ENTITY a \"aaaaaaaaaa\"><!ENTITY b \"&a;&a;&a;&a;&a;\">]>"
+                + "<gpx version=\"1.1\" creator=\"&b;\"><trk><trkseg><trkpt lat=\"37.25\" lon=\"-3.5\"/></trkseg></trk></gpx>";
+        mvc.perform(multipart("/api/routes/check").file(gpx("r.gpx", bomb)).with(jwt()))
            .andExpect(status().isBadRequest());
     }
 

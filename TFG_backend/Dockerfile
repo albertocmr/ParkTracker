@@ -1,5 +1,5 @@
 # --- Fase 1: compilación con Maven ---
-FROM maven:3.9.9-eclipse-temurin-17 AS build
+FROM maven:3.9.16-eclipse-temurin-21-noble AS build
 
 WORKDIR /build
 
@@ -11,9 +11,11 @@ COPY src ./src
 RUN mvn -q clean package -DskipTests
 
 # --- Fase 2: imagen de ejecución (JRE + Python para CheckRoute.py) ---
-FROM eclipse-temurin:17-jre-jammy
+FROM eclipse-temurin:21-jre-noble
 
+# upgrade aplica los parches de seguridad del sistema publicados después de la imagen base
 RUN apt-get update \
+    && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends python3 python3-venv \
     && rm -rf /var/lib/apt/lists/*
 
@@ -21,6 +23,7 @@ RUN apt-get update \
 # así "python3" (parktracker.python) usa este entorno
 COPY requirements.txt /tmp/requirements.txt
 RUN python3 -m venv /opt/venv \
+    && /opt/venv/bin/pip install --no-cache-dir --upgrade pip \
     && /opt/venv/bin/pip install --no-cache-dir -r /tmp/requirements.txt
 ENV PATH="/opt/venv/bin:$PATH"
 

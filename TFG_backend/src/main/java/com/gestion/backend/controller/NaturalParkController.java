@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,10 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.gestion.backend.exception.ResourceNotFoundException;
 import com.gestion.backend.model.NaturalPark;
+import com.gestion.backend.model.NaturalParkRequest;
 import com.gestion.backend.repository.NaturalParkRepository;
 
-
-
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api")
@@ -35,16 +34,14 @@ public class NaturalParkController {
         return naturalParkRepository.findAll();
     }
 
+    // Se recibe un DTO validado y no la entidad: así el cliente no puede fijar el id
+    // y sobrescribir otro parque, ni guardar valores arbitrarios en perimeterfile.
+    // Si la validación falla, Spring responde 400.
     @PostMapping("/natural_parks")
-    public ResponseEntity<NaturalPark> saveNaturalPark(@RequestBody NaturalPark naturalPark){
-    try {
-        NaturalPark parkSaved = naturalParkRepository.save(naturalPark);
-        return ResponseEntity.ok(parkSaved);
-    } catch (Exception e) {
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+    public ResponseEntity<NaturalPark> saveNaturalPark(@Valid @RequestBody NaturalParkRequest request) {
+        NaturalPark park = new NaturalPark(0, request.name().trim(), request.province().trim(), request.perimeterfile());
+        return ResponseEntity.ok(naturalParkRepository.save(park));
     }
-}
-
 
     @GetMapping("/natural_parks/{id}")
     public ResponseEntity<NaturalPark> listNaturalParkById(@PathVariable Long id) {
@@ -55,13 +52,13 @@ public class NaturalParkController {
     }
 
     @PutMapping("/natural_parks/{id}")
-    public ResponseEntity<NaturalPark> updateNaturalPark(@PathVariable Long id, @RequestBody NaturalPark naturalParkRequest) {
+    public ResponseEntity<NaturalPark> updateNaturalPark(@PathVariable Long id, @Valid @RequestBody NaturalParkRequest request) {
         NaturalPark naturalPark = naturalParkRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Doesn't exist park with that ID : " + id));
 
-        naturalPark.setName(naturalParkRequest.getName());
-        naturalPark.setProvince(naturalParkRequest.getProvince());
-        naturalPark.setPerimeterfile(naturalParkRequest.getPerimeterfile());
+        naturalPark.setName(request.name().trim());
+        naturalPark.setProvince(request.province().trim());
+        naturalPark.setPerimeterfile(request.perimeterfile());
 
         NaturalPark naturalParkUpdate = naturalParkRepository.save(naturalPark);
 
@@ -79,6 +76,4 @@ public class NaturalParkController {
         response.put("deleted", Boolean.TRUE);
         return ResponseEntity.ok(response);
     }
-
-    
 }
