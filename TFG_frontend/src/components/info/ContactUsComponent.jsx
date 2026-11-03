@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+const link = "font-medium text-pine-700 underline decoration-pine-300 underline-offset-4 hover:text-pine-950";
+
 const ContactUsComponent = () => {
   const [form, setForm] = useState({
     name: '',
@@ -14,67 +16,53 @@ const ContactUsComponent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, message } = form;
-    const mailtoLink = `mailto:parktracker.contact@gmail.com?subject=Mensaje de ${name} (${email})&body=${encodeURIComponent(message)}`;
+    const subject = encodeURIComponent(`Mensaje de ${name} (${email})`);
+    const mailtoLink = `mailto:parktracker.contact@gmail.com?subject=${subject}&body=${encodeURIComponent(message)}`;
     window.location.href = mailtoLink;
   };
 
   return (
-    <div className="container m-2 p-5 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-xl space-y-10">
-      <div className="bg-white shadow-xl rounded-2xl p-6 border">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">Contáctanos</h1>
-        <p className="text-gray-700 mb-6">
-          ¿Tienes preguntas, sugerencias o quieres colaborar? Puedes enviarnos un mensaje directamente usando el siguiente formulario.
-        </p>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label className="block text-gray-700 font-medium mb-1">Nombre</label>
-            <input
-              type="text"
-              name="name"
-              required
-              value={form.name}
-              onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
-          </div>
-          <div>
-            <label className="block text-gray-700 font-medium mb-1">Correo electrónico</label>
-            <input
-              type="email"
-              name="email"
-              required
-              value={form.email}
-              onChange={handleChange}
-              placeholder=''
-              className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
-          </div>
-          <div>
-            <label className="block text-gray-700 font-medium mb-1">Mensaje</label>
-            <textarea
-              name="message"
-              required
-              rows="5"
-              value={form.message}
-              onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
-          </div>
-          <button
-            type="submit"
-            className="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition"
-          >
-            Enviar mensaje
-          </button>
-        </form>
-      </div>
+    <div className="mx-auto max-w-5xl px-4 pt-10 sm:px-6">
+      <p className="eyebrow">Contacto</p>
+      <h1 className="mt-3 text-4xl font-medium sm:text-5xl">Contáctanos</h1>
+      <p className="mt-4 max-w-2xl leading-relaxed text-pine-900/70">
+        ¿Tienes preguntas, sugerencias o quieres colaborar? Puedes enviarnos un mensaje directamente usando el siguiente formulario.
+      </p>
 
-      <div className="bg-white shadow-xl rounded-2xl p-6 border">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-2">También puedes contactarme por:</h2>
-        <p className="text-gray-700">
-          Correo directo: <a href="mailto:parktracker.contact@gmail.com" className="text-blue-600 underline">parktracker.contact@gmail.com</a><br />
-          Repositorio del proyecto: <a href="https://github.com/albertocmr/ProyectoTFG" target="_blank" className="text-blue-600 underline">GitHub</a>
-        </p>
+      <div className="mt-10 grid gap-5 lg:grid-cols-[1fr_320px]">
+        <form onSubmit={handleSubmit} className="card space-y-5 p-6 sm:p-8">
+          <div className="grid gap-5 sm:grid-cols-2">
+            <div>
+              <label htmlFor="contact-name" className="label">Nombre</label>
+              <input id="contact-name" type="text" name="name" required value={form.name} onChange={handleChange} className="input" />
+            </div>
+            <div>
+              <label htmlFor="contact-email" className="label">Correo electrónico</label>
+              <input id="contact-email" type="email" name="email" required value={form.email} onChange={handleChange} className="input" />
+            </div>
+          </div>
+          <div>
+            <label htmlFor="contact-message" className="label">Mensaje</label>
+            <textarea id="contact-message" name="message" required rows="6" value={form.message} onChange={handleChange} className="input resize-y" />
+          </div>
+          <div className="flex justify-end">
+            <button type="submit" className="btn-primary">Enviar mensaje</button>
+          </div>
+        </form>
+
+        <aside className="h-fit rounded-3xl bg-pine-100/60 p-6 sm:p-8">
+          <h2 className="text-xl font-medium">También puedes contactarme por:</h2>
+          <dl className="mt-5 space-y-4 text-sm">
+            <div>
+              <dt className="text-pine-900/55">Correo directo</dt>
+              <dd className="mt-1"><a href="mailto:parktracker.contact@gmail.com" className={link}>parktracker.contact@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt className="text-pine-900/55">Repositorio del proyecto</dt>
+              <dd className="mt-1"><a href="https://github.com/albertocmr/ParkTracker" target="_blank" rel="noopener noreferrer" className={link}>GitHub</a></dd>
+            </div>
+          </dl>
+        </aside>
       </div>
     </div>
   );

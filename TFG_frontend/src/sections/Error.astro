@@ -2,10 +2,12 @@
 const { error, message, contextMessage } = Astro.props
 ---
 
-<section
-	class="m-auto flex w-full flex-wrap place-items-center items-center justify-center text-primary">
-
-	<div class="m-5 mt-16 text-center">
-			Error: {error}, Mensaje: {message}, Contexto del mensaje: {contextMessage}
+<section class="mx-auto flex max-w-xl flex-col items-center px-4 pt-24 text-center">
+	<p class="font-display text-8xl font-medium text-pine-200 sm:text-9xl">{error}</p>
+	<h1 class="mt-4 text-3xl font-medium sm:text-4xl">{message}</h1>
+	<p class="mt-4 leading-relaxed text-pine-900/70">{contextMessage}</p>
+	<div class="mt-9 flex flex-wrap justify-center gap-3">
+		<a href="/" class="btn-primary">Volver al inicio</a>
+		<a href="/naturalParks" class="btn-secondary">Ver parques naturales</a>
 	</div>
 </section>

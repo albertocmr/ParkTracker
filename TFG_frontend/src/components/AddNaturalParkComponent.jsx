@@ -1,15 +1,27 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { API_URL } from "../config";
+
+const FIELDS = [
+  { id: "name", label: "Nombre", placeholder: "Sierra de Huétor" },
+  { id: "province", label: "Provincia", placeholder: "Granada" },
+  { id: "perimeterfile", label: "Archivo de perímetro", placeholder: "sierra_huetor", hint: "Nombre del GeoJSON en src/assets/coordinates, sin extensión." },
+];
 
 const AddNaturalParkComponent = ({ id }) => {
   const [park, setPark] = useState({ name: "", province: "", perimeterfile: "" });
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     if (!id) return;
 
-    axios.get(`https://parktracker.onrender.com/api/natural_parks/${id}`)
+    axios.get(`${API_URL}/api/natural_parks/${id}`)
       .then(res => setPark(res.data))
-      .catch(error => console.error("Error al cargar parque:", error));
+      .catch(error => {
+        console.error("Error al cargar parque:", error);
+        setError("No se ha podido cargar el parque.");
+      });
   }, [id]);
 
   const handleChange = e => {
@@ -18,47 +30,59 @@ const AddNaturalParkComponent = ({ id }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    setSaving(true);
+    setError("");
     const req = id
-      ? axios.put(`https://parktracker.onrender.com/api/natural_parks/${id}`, park)
-      : axios.post(`https://parktracker.onrender.com/api/natural_parks`, park);
+      ? axios.put(`${API_URL}/api/natural_parks/${id}`, park)
+      : axios.post(`${API_URL}/api/natural_parks`, park);
 
     req
-      .then(res => {
-        console.log(id ? "Actualizado:" : "Creado:", res.data);
+      .then(() => {
         window.location.href = "/managementdb";
       })
-      .catch(err => console.error("Error guardando:", err));
+      .catch(err => {
+        console.error("Error guardando:", err);
+        setError(err.response?.status === 403 || err.response?.status === 401
+          ? "No tienes permisos para guardar cambios."
+          : "No se ha podido guardar el parque.");
+        setSaving(false);
+      });
   };
 
   return (
-    <div className="container p-4">
-      <div className="bg-white shadow-xl rounded-2xl border p-4">
-        <h1 className="fs-4 text-center mb-1"><strong>{id ? "Editar Parque Natural" : "Registro de Parque Natural"}</strong></h1>
-        <form className="p-3" onSubmit={handleSubmit}>
-          {["name","province","perimeterfile"].map(field => (
-            <div key={field} className="form-floating mb-3">
-              <input
-                type="text"
-                id={field}
-                className="form-control"
-                value={park[field]}
-                onChange={handleChange}
-                placeholder=""
-              />
-              <label htmlFor={field}>
-                { field === "name" ? "Nombre" :
-                  field === "province" ? "Provincia" :
-                  "Archivo perímetro" }
-              </label>
-            </div>
-          ))}
-          <button type="submit" className="btn btn-success">
-            {id ? "Actualizar" : "Guardar"}
+    <div className="mx-auto max-w-2xl px-4 pt-10 sm:px-6">
+      <a href="/managementdb" className="inline-flex items-center gap-1.5 text-sm font-medium text-pine-700 hover:text-pine-950">
+        <span aria-hidden="true">←</span> Volver a la gestión
+      </a>
+      <h1 className="mt-4 text-4xl font-medium">{id ? "Editar parque natural" : "Nuevo parque natural"}</h1>
+
+      <form className="card mt-8 space-y-5 p-6 sm:p-8" onSubmit={handleSubmit}>
+        {FIELDS.map(({ id: field, label, placeholder, hint }) => (
+          <div key={field}>
+            <label htmlFor={field} className="label">{label}</label>
+            <input
+              type="text"
+              id={field}
+              className="input"
+              value={park[field] ?? ""}
+              onChange={handleChange}
+              placeholder={placeholder}
+              required
+            />
+            {hint && <p className="mt-1.5 text-xs text-pine-900/50">{hint}</p>}
+          </div>
+        ))}
+
+        {error && <p className="rounded-xl bg-clay-50 px-4 py-3 text-sm text-clay-600">{error}</p>}
+
+        <div className="flex justify-end gap-3 pt-2">
+          <a href="/managementdb" className="btn-secondary">Cancelar</a>
+          <button type="submit" className="btn-primary" disabled={saving}>
+            {saving && <span className="spinner h-4 w-4" />}
+            {id ? "Guardar cambios" : "Crear parque"}
           </button>
-          &nbsp;
-          <a href="/managementdb" className="btn btn-danger">Cancelar</a>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   );
 };

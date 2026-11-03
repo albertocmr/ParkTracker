@@ -1,33 +1,16 @@
 ---
 import NavLinksWrapper from "./NavLinksWrapper.jsx";
+
+const currentPath = Astro.url.pathname;
 ---
 
-<header class="px-5 h-16 lg:h-24 mb-10 navbar navbar-expand-md navbar-dark bg-dark shadow-xl">
-  <div class="container-fluid p-2">
-    <div class="p-2">
-      <a href="/">
-        <img src="/logo-parktracker.png" style="width: 36px" />
-      </a>
-    </div>
-    <a href="/" class="navbar-brand fs-3 fw-bold">ParkTracker</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<header class="sticky top-0 z-40 border-b border-pine-900/5 bg-paper/80 backdrop-blur-xl">
+  <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-4 sm:px-6 lg:h-[4.5rem]">
+    <a href="/" class="group flex shrink-0 items-center gap-2.5">
+      <img src="/logo-parktracker.png" alt="" class="h-8 w-8 transition-transform duration-300 group-hover:-rotate-6" />
+      <span class="font-display text-xl font-semibold tracking-tight text-pine-950">ParkTracker</span>
+    </a>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <NavLinksWrapper client:only="react" />
-    </div>
+    <NavLinksWrapper currentPath={currentPath} client:only="react" />
   </div>
 </header>
-
-<style>
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-</style>

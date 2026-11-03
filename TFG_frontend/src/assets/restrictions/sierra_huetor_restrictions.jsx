@@ -80,9 +80,9 @@ const SierraHuetorRestrictions = ({ selectedMethod }) => {
     ? Array.from(new Set([
       ...rulesByMethod.motor,
       ...rulesByMethod.bike,
-      ...rulesByMethod.hike],
+      ...rulesByMethod.hike,
       ...additionalRules
-    ))
+    ]))
     : rulesByMethod[methodKey] || [];
 
   return (
