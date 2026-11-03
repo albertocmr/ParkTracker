@@ -46,7 +46,7 @@ services:
     networks:
       - app-network
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1"]  # por TCP: durante la inicialización MySQL solo escucha en el socket
       interval: 10s
       timeout: 5s
       retries: 10

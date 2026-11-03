@@ -9,6 +9,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 
@@ -21,8 +22,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.core.JacksonException;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
 
 /**
  * Analiza una ruta GPX contra los perímetros de los parques naturales.
@@ -39,6 +41,10 @@ public class RouteCheckController {
 
     private final ObjectMapper objectMapper;
 
+    // Cada análisis lanza un proceso de Python (~60 MB). Se limita cuántos corren a la vez para que
+    // una ráfaga de peticiones no agote la memoria de la instancia (512 MB en Render Free).
+    private final Semaphore analysisSlots;
+
     @Value("${parktracker.python:python3}")
     private String pythonPath;
 
@@ -48,8 +54,10 @@ public class RouteCheckController {
     @Value("${parktracker.coordinates-dir:/app/park_data/coordinates}")
     private String coordinatesDir;
 
-    public RouteCheckController(ObjectMapper objectMapper) {
+    public RouteCheckController(ObjectMapper objectMapper,
+            @Value("${parktracker.max-concurrent-analyses:2}") int maxConcurrentAnalyses) {
         this.objectMapper = objectMapper;
+        this.analysisSlots = new Semaphore(maxConcurrentAnalyses);
     }
 
     @PostMapping("/check")
@@ -57,6 +65,12 @@ public class RouteCheckController {
         String originalName = file.getOriginalFilename();
         if (file.isEmpty() || originalName == null || !originalName.toLowerCase().endsWith(".gpx")) {
             return ResponseEntity.badRequest().body(Map.of("error", "Debes subir un archivo .gpx no vacío"));
+        }
+
+        if (!analysisSlots.tryAcquire()) {
+            return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
+                    .header("Retry-After", "10")
+                    .body(Map.of("error", "El servidor está ocupado analizando otras rutas. Inténtalo en unos segundos"));
         }
 
         Path workDir = null;
@@ -72,7 +86,7 @@ public class RouteCheckController {
         } catch (ScriptException e) {
             System.err.println("Error en el análisis de la ruta: " + e.getMessage());
             return ResponseEntity.status(e.status).body(Map.of("error", e.publicMessage));
-        } catch (IOException e) {
+        } catch (IOException | JacksonException e) {
             System.err.println("Error de E/S al analizar la ruta: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(Map.of("error", "Error interno al analizar la ruta"));
@@ -82,6 +96,7 @@ public class RouteCheckController {
                     .body(Map.of("error", "Análisis interrumpido"));
         } finally {
             deleteRecursively(workDir);
+            analysisSlots.release();
         }
     }
 

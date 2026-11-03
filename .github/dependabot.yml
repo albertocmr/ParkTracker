@@ -1,0 +1,37 @@
+# Dependabot abre PRs semanales con las actualizaciones de dependencias (y al momento las de seguridad).
+# Las de cada ecosistema se agrupan en un solo PR para que sea fácil revisarlas y probarlas juntas.
+version: 2
+updates:
+  - package-ecosystem: maven
+    directory: /TFG_backend
+    schedule:
+      interval: weekly
+    groups:
+      backend:
+        patterns: ["*"]
+
+  - package-ecosystem: pip
+    directory: /TFG_backend
+    schedule:
+      interval: weekly
+    groups:
+      python:
+        patterns: ["*"]
+
+  - package-ecosystem: npm
+    directory: /TFG_frontend
+    schedule:
+      interval: weekly
+    groups:
+      frontend:
+        patterns: ["*"]
+
+  - package-ecosystem: docker
+    directories: [/TFG_backend, /TFG_frontend]
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

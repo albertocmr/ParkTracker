@@ -8,6 +8,9 @@ on:
     - cron: "*/10 * * * *"
   workflow_dispatch:
 
+# El job solo hace una petición HTTP: no necesita ningún permiso sobre el repositorio
+permissions: {}
+
 jobs:
   ping:
     if: ${{ vars.BACKEND_URL != '' }}
@@ -15,4 +18,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Ping al backend
-        run: curl --silent --show-error --fail --max-time 180 --retry 2 "${{ vars.BACKEND_URL }}/api/perimeters" -o /dev/null
+        # La URL se pasa por entorno y no interpolada en el script, para que su valor no pueda inyectar comandos
+        env:
+          BACKEND_URL: ${{ vars.BACKEND_URL }}
+        run: curl --silent --show-error --fail --max-time 180 --retry 2 "$BACKEND_URL/api/perimeters" -o /dev/null
