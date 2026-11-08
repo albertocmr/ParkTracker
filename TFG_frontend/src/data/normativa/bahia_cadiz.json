@@ -1,0 +1,177 @@
+{
+  "parque": "bahia_cadiz",
+  "plan": "Decreto 130/2024, de 23 de julio (PORN y PRUG)",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/parque-natural-bahia-de-cadiz-incluye-los-parajes-naturales-isla-del-trocadero-y-marismas-de-sancti-petri",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "Cabe destacar que la persona titular de la Delegación Territorial de Cádiz de la Consejería competente en materia de medio ambiente, podrá, mediante Resolución limitar el acceso y uso de los equipamientos básicos o el acceso a cualquier camino o zona terrestre o marina, establecer cupos o limitas fechar y horarios para el desarrollo de cualquier actividad, por alguna de las siguientes causas.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 165
+      }
+    },
+    {
+      "texto": "Excepcionalmente, la Consejería competente en materia de medio ambiente, mediante Resolución de la persona titular de la Delegación Territorial de Cádiz de la Consejería competente en materia de medio ambiente, podrá autorizar eventos deportivos, turísticos o culturales relacionados con las actividades citadas en dicho apartado.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 165
+      }
+    },
+    {
+      "texto": "Actividades de uso público, turismo activo y ecoturismo que impliquen la circulación de motos de trial/enduro, cuatriciclos o vehículos asimilados, excepto si circulan por carreteras o caminos asfaltados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 164
+      }
+    },
+    {
+      "texto": "La realización de cualquier actividad de uso público, turismo activo o ecoturismo en Zona A2 fuera de los equipamientos que se habiliten para ello.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 165
+      }
+    },
+    {
+      "texto": "Actividades de uso público, turismo activo y ecoturismo que impliquen la circulación de vehículos a motor por caminos de acceso restringido (requiere autorización.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 164
+      }
+    },
+    {
+      "texto": "Actividades de uso público, turismo activo y ecoturismo que impliquen la circulación en grupo de 4 ó más vehículos a motor (requiere autorización.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 164
+      }
+    },
+    {
+      "texto": "Observación de fauna y flora.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 163
+      }
+    },
+    {
+      "texto": "Las actividades de filmación, rodaje, grabación sonora y fotografía cuando impliquen el uso de equipos auxiliares, como focos, pantallas reflectoras o generadores eléctricos.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 164
+      }
+    },
+    {
+      "texto": "Las rutas ecuestres para grupos de más de 20 jinetes.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "comunicacion_previa",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 164
+      }
+    },
+    {
+      "texto": "La acampada y la pernocta (aparcar entre el ocaso y la salida del sol) de caravanas, autocaravanas y vehículos de características similares, fuera de los lugares expresamente habilitados a tal fin.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 164
+      }
+    },
+    {
+      "texto": "La realización de cualquier actividad de uso público, turismo activo o ecoturismo en Zona A1, salvo actividades vinculadas a la observación de la fauna y la flora, el patrimonio geológico y la observación geoatmosférica.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 165
+      }
+    },
+    {
+      "texto": "La navegación recreativa a motor en Zona B2 salvo la asociada a la pesca recreativa y a rutas turísticas de carácter educativo-divulgativo excepcionalmente autorizadas por la Administración competente en materia de medio ambiente y que discurran por las zonas señalizadas.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 165
+      }
+    },
+    {
+      "texto": "El establecimiento de campamentos de turismo.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 165
+      }
+    },
+    {
+      "texto": "El senderismo y la marcha nórdica para grupos de más de 50 personas.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "comunicacion_previa",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio (BOJA nº 146), Anexo I",
+        "pagina": 164
+      }
+    },
+    {
+      "texto": "Las actividades en bicicleta para grupos de más de 20 ciclistas.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "comunicacion_previa",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio (BOJA nº 146), Anexo I",
+        "pagina": 164
+      }
+    }
+  ]
+}

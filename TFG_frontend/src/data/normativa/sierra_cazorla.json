@@ -1,0 +1,350 @@
+{
+  "parque": "sierra_cazorla",
+  "plan": "Decreto 191/2017, de 28 de noviembre (ZEC, PORN y PRUG)",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/4V1kD5gLiJkq/content/porn-y-prug-del-parque-natural-sierras-de-cazorla-segura-y-las-villas/20151",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "La Consejería de Turismo, Comercio y Deporte y de Medio Ambiente podrán regular mediante Orden conjunta las obligaciones y condiciones medioambientales para la práctica de aquellas actividades que en el futuro sean declaradas como actividades de turismo activo o ecoturismo.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 191/2017, de 28 de noviembre, por el que se declara la Zona Especial de Conservación Sierras de Cazorla,…",
+        "pagina": 300
+      }
+    },
+    {
+      "texto": "La práctica y el desarrollo de las actividades de uso público y educación ambiental se realizará asegurando la conservación del patrimonio natural y cultural.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 191/2017, de 28 de noviembre, por el que se declara la Zona Especial de Conservación Sierras de Cazorla,…",
+        "pagina": 299
+      }
+    },
+    {
+      "texto": "La circulación de vehículos a motor campo a través, en cortafuegos y fajas auxiliares, en vías forestales de extracción de madera, en cauces secos o inundados, en servidumbres del dominio público hidráulico, caminos de anchura inferior a 2 metros y en senderos, salvo en aquellos tramos de los mismos en los que el uso de vehículos a motor esté expresamente permitido por la persona titular de la Delegación Territorial de Jaén de la Consejería competente en materia de medio ambiente.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Corrección de errores del Decreto 191/2017, de 28 de noviembre, por el que se declara la ZEC Sierras de Cazorla,…",
+        "pagina": 277
+      }
+    },
+    {
+      "texto": "Las actividades de uso público, turismo activo y ecoturismo que impliquen la circulación de motocicletas, cuatriciclos o vehículos asimilados, excepto si circulan por carreteras o caminos asfaltados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Corrección de errores del Decreto 191/2017, de 28 de noviembre, por el que se declara la ZEC Sierras de Cazorla,…",
+        "pagina": 277
+      }
+    },
+    {
+      "texto": "El estacionamiento para pernoctar de caravanas, autocaravanas y vehículos de características similares, fuera de los lugares expresamente habilitados a tal fin.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 191/2017, de 28 de noviembre, por el que se declara la Zona Especial de Conservación Sierras de Cazorla,…",
+        "pagina": 228
+      }
+    },
+    {
+      "texto": "Las actividades de filmación, rodaje, grabación sonora y fotografía que impliquen el uso de equipos auxiliares como focos, pantallas reflectoras, generadores eléctricos u otros.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Corrección de errores del Decreto 191/2017, de 28 de noviembre, por el que se declara la ZEC Sierras de Cazorla,…",
+        "pagina": 276
+      }
+    },
+    {
+      "texto": "Circulación con vehículos a motor por caminos o espacios donde el acceso o uso esté limitado.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "El cicloturismo campo a través y en los senderos que el Programa Sectorial de Uso Público establezca de uso exclusivamente peatonal.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 191/2017, de 28 de noviembre, por el que se declara la Zona Especial de Conservación Sierras de Cazorla,…",
+        "pagina": 228
+      }
+    },
+    {
+      "texto": "Cicloturismo cuando se practique en zonas donde exista limitación de acceso o uso.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Las rutas ecuestres en los senderos que el Programa Sectorial de Uso Público establezca de uso exclusivamente peatonal.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 191/2017, de 28 de noviembre, por el que se declara la Zona Especial de Conservación Sierras de Cazorla,…",
+        "pagina": 228
+      }
+    },
+    {
+      "texto": "Travesía de montaña por espacios por zonas de Reserva.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Senderismo cuando se realice por zonas con limitación de uso o acceso.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Alpinismo en zonas con limitaciones de acceso o uso.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "La heliexcursión, el paracaidismo y el vuelo con ultraligero y en general las actividades recreativas que empleen aeronaves con motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 191/2017, de 28 de noviembre, por el que se declara la Zona Especial de Conservación Sierras de Cazorla,…",
+        "pagina": 228
+      }
+    },
+    {
+      "texto": "Las actividades que impliquen el uso de aparatos de megafonía exterior con alteración de las condiciones de sosiego y silencio.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 191/2017, de 28 de noviembre, por el que se declara la Zona Especial de Conservación Sierras de Cazorla,…",
+        "pagina": 228
+      }
+    },
+    {
+      "texto": "La navegación con motor de explosión.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 191/2017, de 28 de noviembre, por el que se declara la Zona Especial de Conservación Sierras de Cazorla,…",
+        "pagina": 228
+      }
+    },
+    {
+      "texto": "La observación de la fauna, flora, patrimonio geológico y fenómenos geoatmosféricos cuando se realice en espacios donde exista limitación de acceso o de uso.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2017, de 28 de noviembre, por el que se declara la Zona Especial de Conservación Sierras de Cazorla,…",
+        "pagina": 225
+      }
+    },
+    {
+      "texto": "Actividades de filmación, rodaje, grabación sonora y fotografía, incluso sin equipos auxiliares, si se realizan en zonas con acceso o uso limitado.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Corrección de errores del Decreto 191/2017, de 28 de noviembre, por el que se declara la ZEC Sierras de Cazorla,…",
+        "pagina": 276
+      }
+    },
+    {
+      "texto": "Escalada clásica en espacios restringidos.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Navegación a vela, a remo y con motor eléctrico en zonas con acceso o uso limitado.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Piragüismo en espacios con restricciones de uso.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Uso de hidropedales en zonas con acceso o uso restringido.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Descenso de barrancos fuera de los lugares, fechas o condiciones previamente determinadas o en zonas restringidas.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2017, de 28 de noviembre, por el que se declara la Zona Especial de Conservación Sierras de Cazorla,…",
+        "pagina": 225
+      }
+    },
+    {
+      "texto": "Descenso en bote fuera de los lugares y condiciones previamente establecidos.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Escalada deportiva fuera de zonas habilitadas o en fechas no autorizadas.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Espeleología fuera de las zonas, fechas o condiciones reguladas.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Vuelo con globo aerostático fuera de los espacios o fechas autorizadas.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Vuelo libre (parapente, ala delta, etc. ) fuera de zonas y condiciones permitidas.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2017, de 28 de noviembre, por el que se declara la Zona Especial de Conservación Sierras de Cazorla,…",
+        "pagina": 225
+      }
+    },
+    {
+      "texto": "Vuelo sin motor (velero) fuera de los espacios y fechas autorizadas.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Actividades de paint-ball fuera de zonas específicamente autorizadas.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "El vivaqueo y la acampada nocturna vinculados a actividades de travesía de montaña para grupos superiores a 15 personas o que utilicen más de 3 tiendas de campaña.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Corrección de errores del Decreto 191/2017, de 28 de noviembre, por el que se declara la ZEC Sierras de Cazorla,…",
+        "pagina": 276
+      }
+    },
+    {
+      "texto": "La celebración de romerías y fiestas populares.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Corrección de errores del Decreto 191/2017, de 28 de noviembre, por el que se declara la ZEC Sierras de Cazorla,…",
+        "pagina": 275
+      }
+    },
+    {
+      "texto": "La celebración de pruebas o eventos deportivos.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Corrección de errores del Decreto 191/2017, de 28 de noviembre, por el que se declara la ZEC Sierras de Cazorla,…",
+        "pagina": 275
+      }
+    },
+    {
+      "texto": "La celebración de concentraciones y actividades recreativas de carácter ocasional o extraordinario con menos de diez años de antigüedad.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Corrección de errores del Decreto 191/2017, de 28 de noviembre, por el que se declara la ZEC Sierras de Cazorla,…",
+        "pagina": 276
+      }
+    },
+    {
+      "texto": "La celebración de concentraciones y actividades recreativas de más de diez años de antigüedad cuando se modifiquen las condiciones establecidas en la última autorización otorgada por la Delegación Territorial competente.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Corrección de errores del Decreto 191/2017, de 28 de noviembre, por el que se declara la ZEC Sierras de Cazorla,…",
+        "pagina": 275
+      }
+    }
+  ]
+}

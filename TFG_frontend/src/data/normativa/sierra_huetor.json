@@ -1,0 +1,358 @@
+{
+  "parque": "sierra_huetor",
+  "plan": "Decreto 100/2004, de 9 de marzo (PORN y PRUG); PRUG prorrogado por Orden de 9/3/2012",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/parque-natural-sierra-huetor",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "El desarrollo de actividades de turismo en el medio rural, de turismo activo y de ecoturismo por parte de empresas se regirá por la normativa vigente, en particular por lo establecido en el Decreto 20/2002, de 29 de enero, y en la Orden de 20 de marzo de 2003, conjunta de las Consejerías de Turismo y Deporte y de Medio Ambiente, y las disposiciones establecidas en el Plan de Ordenación de los Recursos Naturales y en el Plan Rector de Uso y Gestión del Parque Natural Sierra de Huétor.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "La Consejería de Turismo, Comercio y Deporte y de Medio Ambiente podrán regular mediante Orden conjunta las obligaciones y condiciones medioambientales para la práctica de aquellas actividades que en el futuro sean declaradas como actividades de turismo activo o ecoturismo.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "La práctica y el desarrollo de las actividades de uso público y educación ambiental se realizará asegurando la conservación del patrimonio natural y cultural.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 36
+      }
+    },
+    {
+      "texto": "Circulación campo a través o fuera de los caminos permitidos de vehículos a motor.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "Circulación de vehículos terrestres a motor por caminos rurales de anchura inferior a 2 metros, ni por servidumbres de los dominios públicos hidráulicos, cortafuegos y fajas auxiliares, vías forestales de extracción de madera y cauces secos e inundados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "Los vehículos no podrán salirse de los caminos, excepto en los lugares previstos para ello.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "En caminos de tierra, la velocidad máxima será de 40 km/h, salvo indicación expresa que establezca un límite diferente.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "No se circulará a más de 20 km/h en las inmediaciones de los animales.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "No se interceptará el movimiento de los grupos de animales.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "No se producirán ruidos o sonidos que puedan perturbar a la fauna.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "No se utilizará iluminación artificial alguna.",
+      "medios": [
+        "motor",
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "No se arrojarán alimentos ni se realizarán cebados en lugares de tránsito habitual de animales.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "No se utilizarán sistemas de atracción, captura o repulsión de animales.",
+      "medios": [
+        "motor",
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "Caravanas organizadas de 4 o más vehículos a motor.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "La circulación de quads vinculada a actividades de uso público o turismo activo.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "El acceso y tránsito será libre por los viales de la red pública de caminos, exceptuando los que presenten señalización que indique expresamente una restricción o limitación de paso.",
+      "medios": [
+        "bike",
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 39
+      }
+    },
+    {
+      "texto": "Circulación campo a través o fuera de los caminos permitidos de bicicleta.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "Acampadas o campamentos juveniles de los comtemplados en el Decreto 45/2000.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "La apertura de nuevas vías o escuelas de escalada en paredes y el equipamiento o el desequipamiento de las existentes.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "Está prohibido el vivaqueo, entendiendo por tal la actividad de pasar la noche al aire libre utilizando el material específico para ello (saco de dormir, funda de vivac o tiendas de campaña de pequeño tamaño).",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "Cualquier actividad que se realice en las Zonas de Reserva (A).",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "Cualquier actividad permitida que se realice fuera de los equipamientos básicos y complementarios que requieran la instalación de dotaciones, incluso cuando éstas sean provisionales.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "La realización de cualquier tipo de competición deportiva, prueba o exhibición organizada.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "Las actividades recreativas, o relacionadas con ellas, que empleen helicópteros ultraligeros, aviones, avionetas y cualquier vehículo aéreo con motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "El paracaidismo.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "Las actividades aeronáuticas siguientes: parapente, ala delta, vuelo sin motor y globo aerostático.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "El establecimento de áreas de despegue o aterrizaje, así como la señalización de las mismas, para actividades aeronáuticas sin motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "La instalación de infraestructuras y equipamientos permanentes para el uso público, el turismo o la educación ambiental.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "El descenso de cursos de agua en cualquier tipo de embarcación o artefacto flotante.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "Aquellas romerías o concentraciones de carácter popular que hayan comenzado a tener lugar durante los últimos 10 años o se vayan a iniciar en el futuro.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 19
+      }
+    },
+    {
+      "texto": "Solo se puede encender fuego para cocinar en las dotaciones previstas para ello (barbacoas), durante la época permitida y con la precaución debida para evitar su propagación.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 100/2004, de 9 de marzo",
+        "pagina": 39
+      }
+    }
+  ]
+}

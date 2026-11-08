@@ -1,6 +1,7 @@
 package com.gestion.backend.config;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -36,7 +37,7 @@ public class ParkSeeder implements CommandLineRunner {
         new String[] { "Sierra María-Los Vélez", "Almería", "sierra_maria_los_velez" },
         new String[] { "Sierra Nevada", "Granada", "sierra_nevada" },
         new String[] { "Sierra de las Nieves", "Málaga", "sierra_nieves" },
-        new String[] { "Sierra Norte de Sevilla", "Sevilla", "sierra_norte_sevilla" },
+        new String[] { "Sierra Morena de Sevilla", "Sevilla", "sierra_norte_sevilla" },
         new String[] { "Sierras de Tejeda, Almijara y Alhama", "Granada", "sierra_tejeda" },
         new String[] { "Sierras Subbéticas", "Córdoba", "sierras_subbeticas" }
     );
@@ -47,14 +48,32 @@ public class ParkSeeder implements CommandLineRunner {
         this.repository = repository;
     }
 
+    // Parques cuya denominación oficial ha cambiado: perimeterfile -> {nombre anterior, nombre actual}.
+    // Sierra Norte de Sevilla pasó a llamarse Sierra Morena de Sevilla (Decreto 131/2024).
+    private static final Map<String, String[]> RENAMED = Map.of(
+        "sierra_norte_sevilla", new String[] { "Sierra Norte de Sevilla", "Sierra Morena de Sevilla" }
+    );
+
     @Override
     public void run(String... args) {
         if (repository.count() > 0) {
+            renameOutdatedParks();
             return;
         }
         repository.saveAll(PARKS.stream()
                 .map(p -> new NaturalPark(0, p[0], p[1], p[2]))
                 .toList());
         System.out.println("ParkSeeder: cargados " + PARKS.size() + " parques naturales");
+    }
+
+    /** Actualiza el nombre en bases de datos ya cargadas; si un administrador lo cambió a mano, no lo toca. */
+    private void renameOutdatedParks() {
+        RENAMED.forEach((perimeterfile, names) -> repository.findByPerimeterfile(perimeterfile)
+                .filter(park -> names[0].equals(park.getName()))
+                .ifPresent(park -> {
+                    park.setName(names[1]);
+                    repository.save(park);
+                    System.out.println("ParkSeeder: renombrado " + names[0] + " a " + names[1]);
+                }));
     }
 }

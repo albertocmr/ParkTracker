@@ -1,0 +1,307 @@
+{
+  "parque": "sierra_grazalema",
+  "plan": "Decreto 90/2006, de 18 de abril (PORN y PRUG), modificado por Decreto 72/2015 y Decreto 130/2024",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/parque-natural-sierra-de-grazalema",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "El desarrollo de actividades de turismo en el medio rural, de turismo activo y de ecoturismo por parte de empresas se regirá por la normativa vigente, en particular por lo establecido en el Decreto 20/2002, de 29 de enero, y en la Orden de 20 de marzo de 2003, conjunta de las Consejerías de Turismo y Deporte y de Medio Ambiente, y las disposiciones establecidas en el Plan de Ordenación de los Recursos Naturales y en el Plan Rector de Uso y Gestión del Parque Natural Sierras de Grazalema.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Parte 1",
+        "pagina": 56
+      }
+    },
+    {
+      "texto": "Todas aquellas actividades organizadas por empresas y no comprendidas en el Decreto 20/2002, de 29 de enero, requerirán autorización previa de la Consejería competente en materia de medio ambiente.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 56
+      }
+    },
+    {
+      "texto": "Las Consejerías competentes en materia de medio ambiente y turismo podrán regular mediante Orden Conjunta, las obligaciones y condiciones medioambientales para la práctica de aquellas actividades que en el futuro sean declaradas como actividades de turismo activo o de ecoturismo.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "La práctica y el desarrollo de las actividades de uso público y educación ambiental se realizará asegurando la conservación del patrimonio natural y cultural.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 95
+      }
+    },
+    {
+      "texto": "La circulación campo a través o fuera de los caminos permitidos de vehículos a motor.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "La circulación de vehículos a motor campo a través, en cortafuegos y fajas auxiliares, en vías forestales de extracción de madera, en cauces secos o inundados, en servidumbres del dominio público hidráulico, caminos de anchura inferior a 2 metros y en senderos, salvo en aquellos tramos de los mismos en los que el uso de vehículos a motor esté expresamente permitido por la persona titular de la Delegación Territorial de Jaén de la Consejería competente en materia de medio ambiente.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "El acceso de animales de compañía en la realización de actividades de uso público en Zona A.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "La circulación de quads en actividades vinculadas al uso público.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "La circulación de vehículos a motor en Zonas de reserva (A)",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "Las caravanas con 4 o más vehículos.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 56
+      }
+    },
+    {
+      "texto": "La circulación campo a través o fuera de los caminos permitidos de bicicletas.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "Actividades de orientación en Zona A.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "El paracaidismo.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "Las actividades recreativas que empleen helicópteros, ultraligeros, aviones, avionetas y cualquier vehículo aéreo con motor, así como los globos aerostáticos en época de estío o con riesgo de incendio.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "Las actividades aeronáuticas sin motor en Zona A.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "El acceso de animales de compañía en la realización de actividades de uso público en Zona de Reserva (A)",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "Vivaqueo, entendiendo por tal la actividad de pasar la noche al aire libre utilizando el material específico para estos menesteres, como el saco de dormir, la funda de vivac o tiendas de campaña de pequeña envergadura.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 56
+      }
+    },
+    {
+      "texto": "Senderismo: en Zonas de reserva (A).",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 42
+      }
+    },
+    {
+      "texto": "Travesía o montañismo: en Zonas de reserva (A).",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "El tránsito, para la realización de actividades de educación ambiental, por caminos de acceso restringido por motivos de conservación.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 56
+      }
+    },
+    {
+      "texto": "Descenso de barrancos en zona A.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 56
+      }
+    },
+    {
+      "texto": "Escalada: en lugares no previstos para ello en el Plan Rector de Uso y Gestión.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Turismo ecuestre en Zonas de reserva (A).",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "La realización de cualquier tipo de competición deportiva, prueba o exhibición organizada.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 56
+      }
+    },
+    {
+      "texto": "Las acampadas o campamentos juveniles que se organicen de acuerdo con el Decreto 45/2000, de 31 de enero, sobre la organización de acampadas y campamentos juveniles de Andalucía.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 56
+      }
+    },
+    {
+      "texto": "La apertura de nuevas vías o escuelas de escalada y el reequipamiento y el desequipamiento de las existentes.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 56
+      }
+    },
+    {
+      "texto": "Aquellas romerías o concentraciones de carácter popular que hayan iniciado su actividad durante los últimos 10 años o la vayan a iniciar en la actualidad.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Parte 1",
+        "pagina": 57
+      }
+    },
+    {
+      "texto": "Cualquier actividad permitida que se realice fuera de los equipamientos básicos y complementarios que requiera la instalación de dotaciones, incluso cuando éstas sean provisionales.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 90/2006, de 18 de abril, por el que se aprueban el PORN y el PRUG del Parque Natural Sierra de Grazalema…",
+        "pagina": 57
+      }
+    }
+  ]
+}

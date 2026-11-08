@@ -1,0 +1,263 @@
+{
+  "parque": "sierras_subbeticas",
+  "plan": "Decreto 4/2004, de 13 de enero (PORN y PRUG); PORN modificado por Decreto 84/2012; PRUG prorrogado por Orden de 13/12/2011",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/parque-natural-sierras-subbeticas",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "El desarrollo de las actividades de turismo en el medio rural, de turismo activo y de ecoturismo por parte de empresas se regirá por la normativa vigente, en particular por lo establecido en el Decreto 20/2002, de 29 de enero, y en la Orden de 20 de marzo de 2003, conjunta de las Consejerías de Turismo y Deporte y Medio Ambiente y las disposiciones establecidas en el Plan de Ordenación de los Recursos Naturales y en el Plan Rector de Uso y Gestión.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "La Consejería de Medio Ambiente podrá regular mediante Orden conjunta con la Consejería de Turismo y Deporte las condiciones medioambientales para el desarrollo de nuevas actividades deportivas, de turismo activo o de ecoturismo que se declaren.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "La circulación de vehículos terrestres a motor por caminos rurales de uso restringido, por servidumbres de los dominios públicos hidráulicos, cortafuegos y fajas auxiliares, vías forestales de extracción de madera y cauces secos o inundados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": null
+    },
+    {
+      "texto": "La circulación de vehículos campo a través.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": null
+    },
+    {
+      "texto": "Las bicicletas de montaña, turismo ecuestre y vehículos terrestres a motor en los senderos peatonales de uso público clasificados como tal por la Consejería de Medio Ambiente.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "La circulación de quads vinculada a actividades de uso público.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Las caravanas con 4 o más vehículos.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "Cualquier actividad permitida que se realice fuera de los equipamientos básicos y complementarios que requiera la instalación de dotaciones, incluso cuando éstas sean provisionales.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "La realización de cualquier tipo de competición deportiva, prueba o exhibición organizada.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "Bicicleta de montaña en Zonas de reserva (A).",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "La puesta en valor de nuevos senderos peatonales y su señalización.",
+      "medios": [
+        "bike",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "Senderismo en Zonas de Reserva (A).",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "Turismo ecuestre en Zonas de Reserva (A).",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "El tránsito, para la realización de actividades de educación ambiental, por caminos de acceso restringido por motivos de conservación.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "El paracaidismo.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Las actividades relacionadas con actividades recreativas que empleen helicópteros, ultraligeros, aviones, avionetas y cualquier vehículo aéreo con motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Actividades aeronáuticas: globo aerostático.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "Vivaqueo, entendiendo por tal la actividad de pasar la noche al aire libre utilizando el material específico para estos menesteres, como el saco de dormir o la funda de vivac.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "Las acampadas o campamentos juveniles que se organicen de acuerdo con el Decreto 45/2000.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "El establecimiento de áreas de despegue o aterrizaje, así como la señalización de las mismas, para actividades aeronáuticas sin motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "Aquellas romerías o concentraciones de carácter popular que hayan iniciado su actividad durante los últimos 10 años o la vayan a iniciar en la actualidad.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero, por el que se aprueba el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 26
+      }
+    },
+    {
+      "texto": "La circulación campo a través o fuera de los caminos permitidos de bicicletas y vehículos a motor.",
+      "medios": [
+        "bike",
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero (BOJA nº 38)",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Solo se puede encender fuego para cocinar en las dotaciones previstas para ello (barbacoas), durante la época permitida y con la precaución debida para evitar su propagación.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 4/2004, de 13 de enero (BOJA nº 38)",
+        "pagina": 58
+      }
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "parque": "sierra_baza",
+  "plan": "Decreto 213/2025, de 23 de diciembre (PORN y PRUG)",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/parque-natural-sierra-baza",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "La persona titular de la Consejería competente en materia de medio ambiente podrá, mediante orden, modificar el régimen y las limitaciones de las actividades de uso público, o regular otras actividades.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "La persona titular de la Delegación Territorial en Granada podrá, mediante resolución, limitar el acceso a equipamientos o caminos públicos, establecer cupos o limitar fechas y horarios por exceso de visitantes, riesgo de incendio, protección de la fauna y la flora u obras.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "Las actividades de uso público, turismo activo y ecoturismo que impliquen la circulación de vehículos a motor por caminos de acceso restringido.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "Las actividades de uso público, turismo activo y ecoturismo que impliquen la circulación en grupo de 4 o más vehículos a motor.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "La observación de la fauna, la flora y el patrimonio geológico, y las actividades de filmación, rodaje, grabación sonora y fotografía, cuando impliquen el uso de equipos auxiliares (focos, pantallas reflectoras, generadores) o estructuras de camuflaje permanentes.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "Las acampadas y campamentos para actividades de educación ambiental.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "El vivaqueo y la acampada nocturna para grupos de más de 15 personas o que utilicen más de 3 tiendas de campaña.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "Las romerías y fiestas populares con menos de diez años de antigüedad, o con más de diez cuando cambien sus condiciones.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "La escalada.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "La apertura, reequipamiento o desequipamiento de vías de escalada, incluidas las vías ferratas.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "La espeleología.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "El senderismo y la marcha nórdica para grupos de más de 50 personas.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "comunicacion_previa",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "Las actividades en bicicleta para grupos de más de 50 ciclistas.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "comunicacion_previa",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "Las rutas ecuestres para grupos de más de 20 jinetes.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "comunicacion_previa",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "El vivaqueo y la acampada nocturna para grupos de 15 personas o menos que utilicen 3 tiendas de campaña o menos.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "comunicacion_previa",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "Las actividades de uso público, turismo activo y ecoturismo que impliquen la circulación de motos de trial o enduro, cuatriciclos o vehículos asimilados, excepto por carreteras o caminos asfaltados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "La acampada o pernocta (pasar la noche o dormir en el vehículo entre el ocaso y la salida del sol) de caravanas, autocaravanas y vehículos similares fuera de los lugares habilitados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "La circulación en bicicleta por senderos de uso exclusivamente peatonal y campo a través.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "Las pruebas o eventos deportivos campo a través en zona de reserva (A).",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 170
+      }
+    },
+    {
+      "texto": "La circulación de vehículos a motor campo a través, por cortafuegos y fajas auxiliares, vías forestales de extracción de madera, cauces secos o inundados, servidumbres del dominio público hidráulico, caminos de menos de 2 metros de anchura y senderos o veredas, salvo tramos expresamente permitidos.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 104
+      }
+    },
+    {
+      "texto": "Estacionar en los aledaños de los caminos permitidos no se considera circulación campo a través.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 104
+      }
+    },
+    {
+      "texto": "No se usarán focos distintos de los exigidos por la legislación de tráfico, ni altavoces, claxon o sirenas salvo por seguridad vial.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 104
+      }
+    },
+    {
+      "texto": "No se producirán ruidos o emisiones injustificados que perjudiquen la tranquilidad de otros usuarios o de la fauna.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 104
+      }
+    },
+    {
+      "texto": "La velocidad máxima de las bicicletas es de 20 km/h.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 104
+      }
+    },
+    {
+      "texto": "El senderismo, la marcha nórdica, la bicicleta y las rutas ecuestres se realizarán preferentemente por la red de senderos, pistas, veredas y caminos públicos habilitados.",
+      "medios": [
+        "bike",
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 104
+      }
+    },
+    {
+      "texto": "En la travesía de montaña no se pueden marcar senderos ni caminos nuevos ni alterar la señalización, y cada participante recoge sus residuos.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 104
+      }
+    },
+    {
+      "texto": "Las acampadas y campamentos solo pueden realizarse en la zona de acampada controlada de La Fraguara, salvo otras zonas establecidas por resolución.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 104
+      }
+    },
+    {
+      "texto": "En vías pecuarias y caminos públicos que atraviesen fincas, las cancelas y puertas deben dejarse siempre cerradas.",
+      "medios": [
+        "bike",
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 104
+      }
+    },
+    {
+      "texto": "Cuando los senderos y caminos se compartan con otros usuarios, ciclistas y jinetes disminuirán la velocidad, dando preferencia al peatón.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 213/2025, de 23 de diciembre (BOJA nº 251, de 31 de diciembre de 2025)",
+        "pagina": 104
+      }
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "parque": "montes_malaga",
+  "plan": "Decreto 78/2025, de 5 de marzo (ZEC, PORN y PRUG)",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/4V1kD5gLiJkq/content/porn-y-prug-del-parque-natural-montes-de-m-c3-a1laga/20151",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "La persona titular de la Consejería competente en materia de medio ambiente podrá, mediante orden, modificar el régimen y las limitaciones de las actividades de uso público, o regular otras actividades.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "La persona titular de la Delegación Territorial en Málaga podrá, mediante resolución, limitar el acceso a equipamientos o caminos públicos, establecer cupos o limitar fechas y horarios por exceso de visitantes, riesgo de incendio, protección de la fauna y la flora u obras.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "Las actividades de uso público, turismo activo y ecoturismo que impliquen la circulación de vehículos a motor por caminos de acceso restringido.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "Las actividades de uso público, turismo activo y ecoturismo que impliquen la circulación en grupo de 4 o más vehículos a motor.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "La observación de la fauna, la flora y el patrimonio geológico, y las actividades de filmación, rodaje, grabación sonora y fotografía, cuando impliquen el uso de equipos auxiliares (focos, pantallas reflectoras, generadores) o estructuras de camuflaje permanentes.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "Las acampadas y campamentos para actividades de educación ambiental.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "El vivaqueo y la acampada nocturna para grupos de más de 15 personas o que utilicen más de 3 tiendas de campaña.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "Las romerías y fiestas populares con menos de diez años de antigüedad, o con más de diez cuando cambien sus condiciones.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "El vivaqueo y la acampada nocturna para grupos de 15 personas o menos que utilicen 3 tiendas de campaña o menos.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "comunicacion_previa",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "Las actividades de uso público, turismo activo y ecoturismo que impliquen la circulación de motos de trial o enduro, cuatriciclos o vehículos asimilados, excepto por carreteras o caminos asfaltados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "La acampada o pernocta (pasar la noche o dormir en el vehículo entre el ocaso y la salida del sol) de caravanas, autocaravanas y vehículos similares fuera de los lugares habilitados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "El descenso de barrancos.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "La circulación con bicicleta de montaña por senderos, veredas y caminos de menos de 2 metros de anchura, salvo los designados y señalizados para ello.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "El paseo de perros sueltos.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 121
+      }
+    },
+    {
+      "texto": "La circulación de vehículos a motor campo a través, por cortafuegos y fajas auxiliares, vías forestales de extracción de madera, cauces secos o inundados, servidumbres del dominio público hidráulico, caminos de menos de 2 metros de anchura y senderos o veredas, salvo tramos expresamente permitidos.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 176
+      }
+    },
+    {
+      "texto": "Estacionar en los aledaños de los caminos permitidos no se considera circulación campo a través.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 176
+      }
+    },
+    {
+      "texto": "No se usarán focos distintos de los exigidos por la legislación de tráfico, ni altavoces, claxon o sirenas salvo por seguridad vial.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 176
+      }
+    },
+    {
+      "texto": "No se producirán ruidos o emisiones injustificados que perjudiquen la tranquilidad de otros usuarios o de la fauna.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 176
+      }
+    },
+    {
+      "texto": "Con carácter general, la bicicleta y las rutas ecuestres solo pueden realizarse por caminos de al menos 2 metros de anchura o por senderos habilitados para ello, nunca campo a través, por cortafuegos ni en zonas húmedas o encharcadas.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 176
+      }
+    },
+    {
+      "texto": "El senderismo y la marcha nórdica se realizarán preferentemente por la red de senderos y caminos habilitados.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 176
+      }
+    },
+    {
+      "texto": "Las acampadas y campamentos se realizarán en la zona de acampada controlada de Torrijos, salvo otras zonas establecidas por resolución.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 176
+      }
+    },
+    {
+      "texto": "En vías pecuarias y caminos públicos que atraviesen fincas, las cancelas y puertas deben dejarse siempre cerradas.",
+      "medios": [
+        "bike",
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 176
+      }
+    },
+    {
+      "texto": "Cuando los senderos y caminos se compartan con otros usuarios, ciclistas y jinetes disminuirán la velocidad, dando preferencia al peatón.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 78/2025, de 5 de marzo (BOJA nº 47, de 11 de marzo de 2025)",
+        "pagina": 176
+      }
+    }
+  ]
+}

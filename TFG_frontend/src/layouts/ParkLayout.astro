@@ -2,8 +2,11 @@
 import Layout from "./Layout.astro";
 import { PARKS } from "../data/parks.js";
 
-const { slug, pornUrl } = Astro.props;
+const { slug, pornUrl, plan, consultado } = Astro.props;
 const park = PARKS[slug] ?? { name: slug.replace(/_/g, " "), province: "" };
+const fechaConsulta = consultado
+  ? new Date(consultado).toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" })
+  : null;
 ---
 
 <Layout title={park.name} description={`Normativa de uso público y turismo del Parque Natural ${park.name}.`}>
@@ -33,6 +36,12 @@ const park = PARKS[slug] ?? { name: slug.replace(/_/g, " "), province: "" };
     <article class="restrictions card mt-10 p-6 sm:p-10">
       <slot />
     </article>
+
+    {plan && (
+      <p class="mt-4 px-2 text-sm leading-relaxed text-pine-900/60">
+        Fuente: {plan}{fechaConsulta && <>, consultado el {fechaConsulta}</>}.
+      </p>
+    )}
 
     <aside class="mt-6 rounded-3xl bg-pine-100/60 px-6 py-5 text-sm leading-relaxed text-pine-900/75 sm:px-8">
       <p>

@@ -1,0 +1,315 @@
+{
+  "parque": "sierra_castril",
+  "plan": "Decreto 98/2005, de 11 de abril (PORN y PRUG)",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/parque-natural-sierra-castril",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "El desarrollo de actividades de turismo en el medio rural, de turismo activo y de ecoturismo por parte de empresas se regirá por la normativa vigente.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "Las Consejerías competentes podrán regular mediante Orden las condiciones para estas actividades.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 41
+      }
+    },
+    {
+      "texto": "Queda prohibida la actividad en zonas de reserva (A).",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "En caminos de tierra, la velocidad máxima será de 40 km/h, salvo indicación expresa que establezca un límite diferente.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Anexo II. Plan Rector de Uso y Gestión",
+        "pagina": 15
+      }
+    },
+    {
+      "texto": "La circulación campo a través o fuera de los caminos permitidos de vehículos a motor.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 41
+      }
+    },
+    {
+      "texto": "La circulación de vehículos terrestres a motor por caminos rurales de anchura inferior a 2 metros, ni por servidumbres de los dominios públicos hidráulicos, cortafuegos y fajas auxiliares, vías forestales de extracción de madera y cauces secos e inundados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 41
+      }
+    },
+    {
+      "texto": "No se producirán ruidos o sonidos que puedan perturbar a la fauna.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Anexo II. Plan Rector de Uso y Gestión",
+        "pagina": 15
+      }
+    },
+    {
+      "texto": "No se arrojarán alimentos ni se realizarán cebados en lugares de tránsito habitual de animales.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Anexo II. Plan Rector de Uso y Gestión",
+        "pagina": 15
+      }
+    },
+    {
+      "texto": "No se interceptará la trayectoria de movimiento de los grupos de animales.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Anexo II. Plan Rector de Uso y Gestión",
+        "pagina": 15
+      }
+    },
+    {
+      "texto": "No se circulará a más de 20 km/h en las inmediaciones de los animales.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Anexo II. Plan Rector de Uso y Gestión",
+        "pagina": 15
+      }
+    },
+    {
+      "texto": "No se utilizará iluminación artificial alguna.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Anexo II. Plan Rector de Uso y Gestión",
+        "pagina": 15
+      }
+    },
+    {
+      "texto": "No se utilizarán sistemas de atracción, captura o repulsión de animales.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Anexo II. Plan Rector de Uso y Gestión",
+        "pagina": 15
+      }
+    },
+    {
+      "texto": "La circulación de quads vinculada a actividades de uso público o turismo activo.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 41
+      }
+    },
+    {
+      "texto": "Caravanas organizadas de 4 o más vehículos a motor (requieren autorización).",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "La circulación campo a través o fuera de los caminos permitidos de bicicleta.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 41
+      }
+    },
+    {
+      "texto": "Con carácter general, el acceso y tránsito de visitantes será libre por los viales de la red pública de caminos, exceptuando los que presenten señalización que indique expresamente una restricción o limitación al paso.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Anexo II. Plan Rector de Uso y Gestión",
+        "pagina": 12
+      }
+    },
+    {
+      "texto": "Descenso de ríos en cualquier tipo de embarcación o artefacto flotante.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 41
+      }
+    },
+    {
+      "texto": "Apertura o equipamiento de vías de escalada.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "Navegación sin motor en lagunas o embalses.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "Escalada en aquellas zonas en donde se puedan producir interferencias o affeciones a la fauna o a la flora.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexo II. Plan Rector de Uso y Gestión",
+        "pagina": 13
+      }
+    },
+    {
+      "texto": "El vivaqueo o el uso de tiendas de campaña pequeñas.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "Acampadas o campamentos juveniles (requieren autorización).",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 41
+      }
+    },
+    {
+      "texto": "El barranquismo.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Anexo II. Plan Rector de Uso y Gestión",
+        "pagina": 12
+      }
+    },
+    {
+      "texto": "Espeleología.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Anexo II. Plan Rector de Uso y Gestión",
+        "pagina": 12
+      }
+    },
+    {
+      "texto": "La escalada en zonas con nidificación de aves entre diciembre y agosto.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Anexo I. Plan de Ordenación de los Recursos Naturales",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "La navegación de embarcaciones sin motor por los embalses y lagunas.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Anexo I. PORN del Parque Natural Sierra de Castril",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "Cualquier actividad que se realice en zonas de reserva (A).",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Anexo I. PORN del Parque Natural Sierra de Castril",
+        "pagina": 40
+      }
+    },
+    {
+      "texto": "Solo se puede encender fuego para cocinar en las dotaciones previstas para ello (barbacoas), durante la época permitida y con la precaución debida para evitar su propagación.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Anexo II. PRUG del Parque Natural Sierra de Castril",
+        "pagina": 13
+      }
+    }
+  ]
+}

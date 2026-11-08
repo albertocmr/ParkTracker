@@ -1,0 +1,299 @@
+{
+  "parque": "sierra_hornachuelos",
+  "plan": "Decreto 131/2024, de 23 de julio (PORN y PRUG)",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/parque-natural-sierra-de-hornachuelos",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "Las Consejerías competentes en materia de medio ambiente y turismo podrán regular mediante Orden Conjunta, las obligaciones y condiciones medioambientales para la práctica de aquellas actividades que en el futuro sean declaradas como actividades de turismo activo o de ecoturismo.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 229
+      }
+    },
+    {
+      "texto": "La práctica y el desarrollo de las actividades de uso público y educación ambiental se realizará asegurando la conservación del patrimonio natural y cultural.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 228
+      }
+    },
+    {
+      "texto": "Las actividades de uso público, turismo activo y ecoturismo que impliquen la circulación de motos de trial/enduro, cuatriciclos o vehículos asimilados, excepto si circulan por carreteras o caminos asfaltados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 145
+      }
+    },
+    {
+      "texto": "Las actividades de uso público, turismo activo y ecoturismo que impliquen la circulación de vehículos a motor por caminos de acceso restringido.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 144
+      }
+    },
+    {
+      "texto": "Las actividades de uso público, turismo activo y ecoturismo que impliquen la circulación en grupo de 4 ó más vehículos a motor.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 144
+      }
+    },
+    {
+      "texto": "La celebración de pruebas o eventos deportivos y las concentraciones y actividades recreativas, tal como las define el Decreto 195/2007, de 26 de junio.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 145
+      }
+    },
+    {
+      "texto": "El senderismo, la marcha nórdica, las actividades en bicicleta y las rutas ecuestres en los senderos que discurran por Zona A.",
+      "medios": [
+        "bike",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 144
+      }
+    },
+    {
+      "texto": "Las acampadas y campamentos para la realización de actividades de educación ambiental, que solo podrán realizarse en las zonas y condiciones que se establezcan mediante resolución de la persona titular de la Delegación Territorial de Huelva de la Consejería competente en materia de medio ambiente.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 145
+      }
+    },
+    {
+      "texto": "El descenso de barrancos en bote en Zona A.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 145
+      }
+    },
+    {
+      "texto": "El vivaqueo y la acampada nocturna.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 145
+      }
+    },
+    {
+      "texto": "La acampada o la pernocta (pasar la noche o dormir en el vehículo entre el ocaso y la salida del sol) de caravanas, autocaravanas y vehículos de características similares, fuera de los lugares expresamente habilitados a tal fin.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 145
+      }
+    },
+    {
+      "texto": "La observación de la fauna y la flora, del patrimonio geológico y la observación geoatmosférica, cuando su práctica implique el uso de equipos auxiliares, tales como focos, pantallas reflectoras, generadores eléctricos u otros, así como la instalación de estructuras de camuflaje, permanentes o no desmontables, para la observación de aves y, en cualquier caso, cuando se desarrolle en Zona A1.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 144
+      }
+    },
+    {
+      "texto": "Las actividades de filmación, rodaje, grabación sonora y fotografía, cuando su práctica implique el uso de equipos auxiliares, tales como focos, pantallas reflectoras, generadores eléctricos u otros, así como la instalación de estructuras de camuflaje permanentes o no desmontables.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 144
+      }
+    },
+    {
+      "texto": "La escalada clásica y deportiva.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 144
+      }
+    },
+    {
+      "texto": "La apertura, reequipamiento o desequipamiento de vías de escalada.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 144
+      }
+    },
+    {
+      "texto": "El descenso de barrancos.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 144
+      }
+    },
+    {
+      "texto": "La navegación a remo, vela y a motor, motos acuáticas, el esquí acuático, piragüismo e hidropedales, cuando se realicen en Zona A.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 144
+      }
+    },
+    {
+      "texto": "La espeleología.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 144
+      }
+    },
+    {
+      "texto": "La celebración de romerías y fiestas populares con menos de diez años de antigüedad y aquellas de más de diez años de antigüedad cuando se produzcan modificaciones de las condiciones establecidas en la última autorización otorgada.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio, por el que se aprueban los Planes de Ordenac, parte 04",
+        "pagina": 145
+      }
+    },
+    {
+      "texto": "El senderismo y la marcha nórdica para grupos de más de 50 personas.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "comunicacion_previa",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio (BOJA nº 152, de 6 de agosto de 2024), Anexo V (PORN), parte 04",
+        "pagina": 145
+      }
+    },
+    {
+      "texto": "Las actividades en bicicleta para grupos de más de 20 ciclistas.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "comunicacion_previa",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio (BOJA nº 152, de 6 de agosto de 2024), Anexo V (PORN), parte 04",
+        "pagina": 145
+      }
+    },
+    {
+      "texto": "Las rutas ecuestres para grupos de más de 20 jinetes.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "comunicacion_previa",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio (BOJA nº 152, de 6 de agosto de 2024), Anexo V (PORN), parte 04",
+        "pagina": 145
+      }
+    },
+    {
+      "texto": "El senderismo, la marcha nórdica, las actividades en bicicleta y las rutas ecuestres se realizarán preferentemente por la red de senderos y caminos habilitados.",
+      "medios": [
+        "bike",
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio (BOJA nº 152, de 6 de agosto de 2024), Anexo VI (PRUG), parte 04",
+        "pagina": 230
+      }
+    },
+    {
+      "texto": "No se pueden realizar actividades en bicicleta ni rutas ecuestres campo a través, en zonas húmedas o encharcadas, ni en los senderos declarados de uso exclusivamente peatonal.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio (BOJA nº 152, de 6 de agosto de 2024), Anexo VI (PRUG), parte 04",
+        "pagina": 230
+      }
+    },
+    {
+      "texto": "Cuando los senderos y caminos se compartan con otros usuarios, ciclistas y jinetes disminuirán la velocidad, dando siempre preferencia al peatón.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio (BOJA nº 152, de 6 de agosto de 2024), Anexo VI (PRUG), parte 04",
+        "pagina": 230
+      }
+    },
+    {
+      "texto": "En vías pecuarias y caminos públicos que atraviesen fincas, las cancelas y puertas deben dejarse siempre cerradas.",
+      "medios": [
+        "bike",
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 131/2024, de 23 de julio (BOJA nº 152, de 6 de agosto de 2024), Anexo VI (PRUG), parte 04",
+        "pagina": 230
+      }
+    }
+  ]
+}

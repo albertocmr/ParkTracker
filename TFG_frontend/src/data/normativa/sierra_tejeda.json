@@ -1,0 +1,143 @@
+{
+  "parque": "sierra_tejeda",
+  "plan": "Decreto 2/2016, de 12 de enero (ZEC, PORN y PRUG)",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/parque-natural-sierras-tejeda-almijara-alhama",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "La Consejería de Turismo, Comercio y Deporte y de Medio Ambiente podrán regular mediante Orden conjunta las obligaciones y condiciones medioambientales para la práctica de aquellas actividades que en el futuro sean declaradas como actividades de turismo activo o ecoturismo.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Anexos I, II y III (Boja nº18 de 28 de enero).",
+        "pagina": 233
+      }
+    },
+    {
+      "texto": "La práctica y el desarrollo de las actividades de uso público y educación ambiental se realizará asegurando la conservación del patrimonio natural y cultural.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Anexos I, II y III (Boja nº18 de 28 de enero).",
+        "pagina": 233
+      }
+    },
+    {
+      "texto": "La circulación con vehículos a motor será de libre realización cuando se realice en equipamientos públicos, caminos, pistas forestales u otros espacios donde no exista limitación de acceso o de uso, que se establecerán mediante Orden de la persona titular de la Consejería competente en materia de medio ambiente.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Anexos I, II y III (Boja nº18 de 28 de enero).",
+        "pagina": 152
+      }
+    },
+    {
+      "texto": "La circulación de vehículos a motor campo a través, en cortafuegos y fajas auxiliares, en vías forestales de extracción de madera, en cauces secos o inundados, en servidumbres del dominio público hidráulico, caminos de anchura inferior a 2 metros y en senderos, salvo en aquellos tramos de los mismos en los que el uso de vehículos a motor esté expresamente permitido por la persona titular de la Delegación Territorial de Jaén de la Consejería competente en materia de medio ambiente.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexos I, II y III (Boja nº18 de 28 de enero).",
+        "pagina": 152
+      }
+    },
+    {
+      "texto": "La circulación de motocicletas, cuatriciclos o vehículos asimilados, excepto si circulan por carreteras o caminos asfaltados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexos I, II y III (Boja nº18 de 28 de enero).",
+        "pagina": 152
+      }
+    },
+    {
+      "texto": "El estacionamiento para pernoctar de caravanas, autocaravanas y vehículos de características similares, fuera de los lugares expresamente habilitados a tal fin.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexos I, II y III (Boja nº18 de 28 de enero).",
+        "pagina": 152
+      }
+    },
+    {
+      "texto": "Las actividades que impliquen el uso de aparatos de megafonía exterior con alteración de las condiciones de sosiego y silencio.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexos I, II y III (Boja nº18 de 28 de enero).",
+        "pagina": 152
+      }
+    },
+    {
+      "texto": "En zonas de Reserva A, será incompatible la circulación de vehículos a motor, salvo los ligados a la gestión del espacio, a las actividades de investigación, el uso público, el turismo activo y ecoturismo y a los aprovechamientos forestales, ganaderos y cinegéticos.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexos I, II y III (Boja nº18 de 28 de enero).",
+        "pagina": 157
+      }
+    },
+    {
+      "texto": "El cicloturismo campo a través y en los senderos de uso exclusivamente peatonal.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexos I, II y III (Boja nº18 de 28 de enero).",
+        "pagina": 152
+      }
+    },
+    {
+      "texto": "Las rutas ecuestres en senderos de uso público establezca exclusivamente peatonal.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexos I, II y III (Boja nº18 de 28 de enero).",
+        "pagina": 152
+      }
+    },
+    {
+      "texto": "El vivaqueo y la acampada nocturna vinculados a actividades de travesía de montaña para grupos superiores a 15 personas o que utilicen más de 3 tiendas de campaña.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Anexos I, II y III (Boja nº18 de 28 de enero).",
+        "pagina": 151
+      }
+    },
+    {
+      "texto": "Las actividades de filmación, rodaje, grabación sonora y fotografía que impliquen el uso de equipos auxiliares, tales como focos, pantallas reflectoras, generadores eléctricos u otros.",
+      "medios": [
+        "hike",
+        "otras"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Anexos I, II y III (Boja nº18 de 28 de enero).",
+        "pagina": 149
+      }
+    }
+  ]
+}

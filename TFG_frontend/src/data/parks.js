@@ -20,7 +20,7 @@ export const PARKS = {
   sierra_maria_los_velez: { name: "Sierra María-Los Vélez", province: "Almería" },
   sierra_nevada: { name: "Sierra Nevada", province: "Granada y Almería" },
   sierra_nieves: { name: "Sierra de las Nieves", province: "Málaga" },
-  sierra_norte_sevilla: { name: "Sierra Norte de Sevilla", province: "Sevilla" },
+  sierra_norte_sevilla: { name: "Sierra Morena de Sevilla", province: "Sevilla" },
   sierra_tejeda: { name: "Sierras de Tejeda, Almijara y Alhama", province: "Granada y Málaga" },
   sierras_subbeticas: { name: "Sierras Subbéticas", province: "Córdoba" },
 };

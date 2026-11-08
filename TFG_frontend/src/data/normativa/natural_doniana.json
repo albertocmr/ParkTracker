@@ -1,0 +1,192 @@
+{
+  "parque": "natural_doniana",
+  "plan": "Decreto 142/2016, de 2 de agosto (PORN y PRUG del Espacio Natural Doñana), modificado por Orden de 20 de octubre de 2026",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/espacio-natural-de-donana",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "Las presentes normas generales serán de aplicación al conjunto del Espacio Natural de Doñana, incluyendo tanto el Parque Nacional y sus Zonas de Protección, como el Parque Natural. Todo ello sin perjuicio de lo dispuesto para cada una de las zonas identificadas en sus respectivas normativas particulares.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Epígrafes del 1 al 10",
+        "pagina": 259
+      }
+    },
+    {
+      "texto": "Durante su vigencia, el contenido del Plan podrá ser sometido a modificación de alguna o algunas de las partes que lo constituyen, o a un procedimiento de revisión del conjunto del mismo.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Epígrafes del 1 al 10",
+        "pagina": 257
+      }
+    },
+    {
+      "texto": "Las normas del presente Plan son determinaciones de aplicación directa, vinculantes para las Administraciones Públicas y para los particulares.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Epígrafes del 1 al 10",
+        "pagina": 259
+      }
+    },
+    {
+      "texto": "La Consejería de Medio Ambiente podrá limitar o restringir a los visitantes en general o a cierto tipo de medios de transporte, de forma eventual o permanente, el acceso por cualquier camino público cuando exista causa justificada por impacto ambiental, incompatibilidad de uso con la gestión de la conservación, con los trabajos forestales o de aprovechamiento de los recursos, y por motivos de riesgo a las personas.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": null,
+      "verificada": false
+    },
+    {
+      "texto": "En caminos de tierra, la velocidad máxima será de 40 km/h salvo indicación expresa que establezca un límite diferente.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": null,
+      "verificada": false
+    },
+    {
+      "texto": "Los vehículos no podrán salirse de los caminos, excepto en los lugares previstos para ello.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": null,
+      "verificada": false
+    },
+    {
+      "texto": "No se producirán ruidos o sonidos estridentes que puedan perturbar la fauna.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": null,
+      "verificada": false
+    },
+    {
+      "texto": "No se arrojarán alimentos ni se realizarán cebados en lugares de tránsito habitual de animales.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": null,
+      "verificada": false
+    },
+    {
+      "texto": "No se interceptará la trayectoria de movimiento de los grupos de animales.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": null,
+      "verificada": false
+    },
+    {
+      "texto": "No se circulará a más de 20 km/h en las inmediaciones de los animales.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": null,
+      "verificada": false
+    },
+    {
+      "texto": "No se utilizará iluminación artificial alguna.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": null,
+      "verificada": false
+    },
+    {
+      "texto": "No se utilizará ningún sistema de atracción, captura o repulsión de animales.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "condicion",
+      "fuente": null,
+      "verificada": false
+    },
+    {
+      "texto": "Las actividades que impliquen el uso de aparatos de megafonía exterior con alteración de las condiciones de sosiego y silencio.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Epígrafes del 1 al 10",
+        "pagina": 264
+      }
+    },
+    {
+      "texto": "El estacionamiento para pernoctar de caravanas, autocaravanas y vehículos de características similares, fuera de los lugares expresamente habilitados a tal fin.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Epígrafes del 1 al 10",
+        "pagina": 264
+      }
+    },
+    {
+      "texto": "El cicloturismo campo a través y en senderos de uso exclusivamente peatonal.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Epígrafes del 1 al 10",
+        "pagina": 264
+      }
+    },
+    {
+      "texto": "Las rutas ecuestres en senderos de uso público exclusivamente peatonales.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Epígrafes del 1 al 10",
+        "pagina": 264
+      }
+    },
+    {
+      "texto": "El paracaidismo y el vuelo con ultraligero y en general las actividades recreativas que empleen aeronaves con motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Epígrafes del 1 al 10",
+        "pagina": 264
+      }
+    },
+    {
+      "texto": "La acampada y pernocta al aire libre, a excepción de lo dispuesto en las normas generales referidas a actividades rocieras y romerías y en materia de actividades de investigación.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Epígrafes del 1 al 10",
+        "pagina": 265
+      }
+    }
+  ]
+}

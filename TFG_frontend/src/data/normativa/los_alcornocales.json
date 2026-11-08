@@ -1,0 +1,144 @@
+{
+  "parque": "los_alcornocales",
+  "plan": "Decreto 150/2017, de 19 de septiembre (PORN y PRUG)",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/parque-natural-los-alcornocales",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "Excepcionalmente, el órgano competente de la Consejería competente en materia de medio ambiente podrá autorizar eventos deportivos, turísticos o culturales relacionados con las actividades no permitidas, salvo en la heliexcursión, el paracaidismo y el vuelo con ultraligero y en general las actividades recreativas que empleen aeronaves con moto, que no se podrán autorizar cuando pretendan desarrollarse en zonas de reserva A.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 150/2017, de 19 de septiembre, por el que se aprueba el Plan de Ordenación de los Recursos Naturales del…",
+        "pagina": 279
+      }
+    },
+    {
+      "texto": "La circulación de vehículos a motor “campo a través”, en cortafuegos y fajas auxiliares, en vías forestales de extracción de madera, en cauces secos o inundados, en servidumbres de los dominios públicos hidráulicos y marítimo terrestre, caminos de anchura inferior a 2 metros y en senderos, salvo en aquellos tramos de los mismos en los que el uso de vehículos a motor esté expresamente permitido por la persona titular de la correspondiente Delegación Territorial de la Consejería competente en materia de medio ambiente.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 150/2017, de 19 de septiembre, por el que se aprueba el Plan de Ordenación de los Recursos Naturales del…",
+        "pagina": 279
+      }
+    },
+    {
+      "texto": "La circulación de motocicletas, cuatriciclos o vehículos asimilados, excepto si circulan por carreteras o caminos asfaltados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 150/2017, de 19 de septiembre, por el que se aprueba el Plan de Ordenación de los Recursos Naturales del…",
+        "pagina": 279
+      }
+    },
+    {
+      "texto": "Las actividades que impliquen el uso de aparatos de megafonía exterior con alteración de las condiciones de sosiego y silencio.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 150/2017, de 19 de septiembre, por el que se aprueba el Plan de Ordenación de los Recursos Naturales del…",
+        "pagina": 279
+      }
+    },
+    {
+      "texto": "El estacionamiento para pernoctar de caravanas, autocaravanas y vehículos de características similares, fuera de los lugares expresamente habilitados a tal fin.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 150/2017, de 19 de septiembre, por el que se aprueba el Plan de Ordenación de los Recursos Naturales del…",
+        "pagina": 279
+      }
+    },
+    {
+      "texto": "Las actividades de filmación, grabación sonora y fotografía que impliquen el uso de equipos auxiliares, tales como focos, pantallas reflectoras, generadores eléctricos u otros.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 150/2017, de 19 de septiembre, por el que se aprueba el Plan de Ordenación de los Recursos Naturales del…",
+        "pagina": 276
+      }
+    },
+    {
+      "texto": "El cicloturismo campo a través y en senderos de uso exclusivamente peatonal.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 150/2017, de 19 de septiembre, por el que se aprueba el Plan de Ordenación de los Recursos Naturales del…",
+        "pagina": 278
+      }
+    },
+    {
+      "texto": "El vivaqueo y la acampada nocturna vinculados a travesía de montaña para grupos superiores a 15 personas o que utilicen más de 3 tiendas de campaña.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 150/2017, de 19 de septiembre, por el que se aprueba el Plan de Ordenación de los Recursos Naturales del…",
+        "pagina": 278
+      }
+    },
+    {
+      "texto": "La heliexcursión, el paracaidismo y el vuelo con ultraligero y en general las actividades recreativas que empleen aeronaves con motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 150/2017, de 19 de septiembre, por el que se aprueba el Plan de Ordenación de los Recursos Naturales del…",
+        "pagina": 278
+      }
+    },
+    {
+      "texto": "Las rutas ecuestres en senderos de uso público exclusivamente peatonales.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 150/2017, de 19 de septiembre, por el que se aprueba el Plan de Ordenación de los Recursos Naturales del…",
+        "pagina": 279
+      }
+    },
+    {
+      "texto": "El descenso de barrancos en canutos y en cauces de agua cuando dicha práctica suponga una amenaza para la conservación.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 87/2004, de 2 de marzo, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el Plan…",
+        "pagina": 32
+      }
+    },
+    {
+      "texto": "Las romerías, fiestas populares, pruebas o eventos deportivos, las concentraciones y las actividades recreativas tal como las define el Decreto 195/2007, de 26 de junio.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 150/2017, de 19 de septiembre, por el que se aprueba el Plan de Ordenación de los Recursos Naturales del…",
+        "pagina": 276
+      }
+    }
+  ]
+}
