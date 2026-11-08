@@ -23,8 +23,8 @@ export default defineConfig({
         "default-src 'self'",
         // El backend (análisis y parques) y Auth0 (renovación de tokens)
         `connect-src 'self' ${apiOrigin} ${auth0Origin}`,
-        // Auth0 recurre a un iframe oculto si no hay refresh token
-        `frame-src ${auth0Origin}`,
+        // Auth0 recurre a un iframe oculto si no hay refresh token; "Crea tu ruta" incrusta el mapa de OSRM
+        `frame-src ${auth0Origin} https://map.project-osrm.org`,
         // Teselas de OpenStreetMap y la foto de perfil del usuario (Google, Gravatar…)
         "img-src 'self' data: blob: https:",
         "font-src 'self' https://fonts.gstatic.com",
