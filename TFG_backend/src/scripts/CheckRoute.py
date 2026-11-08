@@ -103,8 +103,41 @@ def main():
         except Exception as e:
             log(f"Error al procesar el archivo {geojson_file}: {e}")
 
-    print(json.dumps({"parks": parks, "intersections": intersections}))
+    reservas = check_reserve_zones(gdf_points, os.path.join(geojson_dir, 'reserva_A'), parks)
+
+    print(json.dumps({"parks": parks, "intersections": intersections, "reservas": reservas}))
     return 0
+
+
+def check_reserve_zones(gdf_points, reserve_dir, parks):
+    """Zonas de reserva (A) de la zonificación oficial que atraviesa la ruta, solo de los parques detectados.
+
+    Devuelve {parque: {"subzonas": [...], "intersections": MultiLineString}}.
+    """
+    reservas = {}
+    if not os.path.isdir(reserve_dir):
+        return reservas
+    for park_name in parks:
+        path = os.path.join(reserve_dir, f'{park_name}_A.json')
+        if not os.path.isfile(path):
+            continue
+        try:
+            gdf_zones = gpd.read_file(path)
+            subzonas = []
+            inside_any = None
+            for _, zone in gdf_zones.iterrows():
+                within = gdf_points.within(zone.geometry)
+                if within.any():
+                    subzonas.append({"subzona": zone.get('subzona'), "descripcion": zone.get('descripcion')})
+                    inside_any = within if inside_any is None else (inside_any | within)
+            if subzonas:
+                segments = segments_inside(gdf_points, inside_any)
+                reservas[park_name] = {"subzonas": subzonas}
+                if segments:
+                    reservas[park_name]["intersections"] = {"type": "MultiLineString", "coordinates": segments}
+        except Exception as e:
+            log(f"Error al procesar la zona de reserva de {park_name}: {e}")
+    return reservas
 
 
 if __name__ == "__main__":

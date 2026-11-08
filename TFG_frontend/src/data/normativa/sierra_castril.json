@@ -27,11 +27,12 @@
       }
     },
     {
-      "texto": "Queda prohibida la actividad en zonas de reserva (A).",
+      "texto": "Cualquier actividad que se realice en zonas de reserva (A).",
       "medios": [
         "motor",
         "bike",
-        "hike"
+        "hike",
+        "otras"
       ],
       "regimen": "autorizacion",
       "fuente": {
@@ -280,17 +281,6 @@
     },
     {
       "texto": "La navegación de embarcaciones sin motor por los embalses y lagunas.",
-      "medios": [
-        "otras"
-      ],
-      "regimen": "autorizacion",
-      "fuente": {
-        "documento": "Anexo I. PORN del Parque Natural Sierra de Castril",
-        "pagina": 40
-      }
-    },
-    {
-      "texto": "Cualquier actividad que se realice en zonas de reserva (A).",
       "medios": [
         "otras"
       ],

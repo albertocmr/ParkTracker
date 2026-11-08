@@ -70,3 +70,55 @@ Limitaciones conocidas:
 5. Comprueba la ficha del parque en `/parques-naturales/<parque>` y el resultado del análisis de una ruta que lo atraviese.
 
 Un cuidado especial con los decretos que aprueban los planes de varios parques a la vez (130/2024 y 131/2024): cada parque tiene sus propios anexos, y las listas se parecen mucho entre parques.
+
+## Zonas de reserva y zonificación
+
+### Dónde están
+
+| Carpeta | Contenido | Quién la usa |
+|---|---|---|
+| `TFG_frontend/src/assets/coordinates/reserva_A/<parque>_A.json` y `TFG_backend/park_data/coordinates/reserva_A/` (idénticas) | Zonas de reserva (A, A1, A2…) de cada parque | Capa «Zonas de reserva A» del mapa y análisis de rutas (`CheckRoute.py`) |
+| `TFG_frontend/src/assets/coordinates/zonificacion/<parque>.json` | Zonificación completa del PORN (A, B, C y otras) | Capa «Zonificación del PORN» del mapa, que se descarga solo al activarla |
+
+Cada fichero es una `FeatureCollection` en EPSG:4326 con una entidad por subzona:
+
+```json
+{ "parque": "sierra_baza", "zona": "A", "subzona": "A1", "descripcion": "A1. Zonas de reserva de Tomillares dolomíticos o Blanquizares de Gor",
+  "plan": "Decreto 213/2025, de 23 de diciembre", "fuente": "REDIAM…", "superficie_ha": 649.3 }
+```
+
+### Fuente
+
+Capa oficial **Zonificación de los PORN vigentes** de la REDIAM (Junta de Andalucía), descargada el **8 de noviembre de 2026** de su servicio WFS:
+
+```
+https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_zonificacion_PORN_vigentes?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=ms:porn_vigentes&OUTPUTFORMAT=application/json
+```
+
+Ficha en el catálogo: [Andalucía, capa de zonificación de los PORN vigentes](https://portalrediam.cica.es/geonetwork/srv/api/records/35e8d56f-b286-40b1-b7d7-3fda4a21c441). La capa viene en ETRS89 UTM 30N y se convierte a EPSG:4326. Para que la web la pueda cargar, la geometría se simplifica con una tolerancia de 8 m en las zonas A y de 40 m en el resto, y las coordenadas se redondean a 5 decimales (≈1 m).
+
+Resultado: 27 zonas de reserva en 22 parques. Montes de Málaga no tiene zona A en su plan de 2025.
+
+A tener en cuenta en la versión descargada:
+
+- **Despeñaperros**: la capa aún tiene la zonificación del plan de 2004; el Decreto 61/2026 amplía el parque y su nueva zonificación no está publicada en la REDIAM.
+- **Los Alcornocales**: la capa usa la zonificación del Decreto 87/2004.
+- La capa incluye un parque natural que ParkTracker no tiene: **La Breña y Marismas del Barbate** (Decreto 189/2025).
+
+### Cómo se usa en el análisis
+
+`CheckRoute.py` comprueba, para cada parque que atraviesa la ruta, si algún punto cae en su zona A (`reserva_A/<parque>_A.json`). La respuesta de `POST /api/routes/check` incluye entonces:
+
+```json
+"reservas": { "sierra_huetor": { "subzonas": [{ "subzona": "A", "descripcion": "A. Zonas de Reserva. Tomillares dolomíticos" }],
+                                 "intersections": { "type": "MultiLineString", "coordinates": [...] } } }
+```
+
+El resultado muestra un aviso con las subzonas y las normas del parque que se refieren a las zonas de reserva, y el mapa resalta esos tramos.
+
+### Cómo actualizarla
+
+1. Descarga la capa con la petición WFS de arriba (unos 130 MB).
+2. Conviértela por parque: filtra las entidades con `Figura = "Parque Natural"`, transforma de EPSG:25830 a EPSG:4326, simplifica y guarda las zonas A en `reserva_A/<parque>_A.json` (frontend y backend) y todas en `zonificacion/<parque>.json`. Usa los mismos nombres de archivo que los perímetros.
+3. Comprueba en el mapa que las capas cargan y analiza una ruta que cruce una zona A.
+4. Si cambia el número de zonas A, actualiza la cifra de la portada (`HomeComponent.jsx`).

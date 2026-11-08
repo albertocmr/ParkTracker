@@ -63,9 +63,9 @@ export const removeGPXLayers = (map, gpxLayers, setGpxLayers) => {
     setGpxLayers([]);
 }
 
-// Dibuja los tramos de la ruta que caen dentro de cada parque,
-// tal y como los devolvió el análisis (GeoJSON por parque).
-export const addIntersectionsToMap = (map, intersections, setGpxLayers, notify) => {
+// Dibuja los tramos de la ruta que caen dentro de cada parque y, encima, los que entran
+// en sus zonas de reserva (A), tal y como los devolvió el análisis (GeoJSON por parque).
+export const addIntersectionsToMap = (map, intersections, reservas, setGpxLayers, notify) => {
     if (!map) return;
 
     const entries = Object.entries(intersections || {});
@@ -86,8 +86,25 @@ export const addIntersectionsToMap = (map, intersections, setGpxLayers, notify) 
         }).bindPopup(formatParkName(park)).addTo(group);
     }
 
+    let enReserva = false;
+    for (const [park, reserva] of Object.entries(reservas || {})) {
+        if (!reserva.intersections) continue;
+        enReserva = true;
+        L.geoJSON(reserva.intersections, {
+            style: {
+                color: '#7a2e10',
+                weight: 7,
+                opacity: 1,
+                dashArray: '2 10',
+                lineCap: 'round',
+            },
+        }).bindPopup(`Zona de reserva (A) · ${formatParkName(park)}`).addTo(group);
+    }
+
     group.addTo(map);
     map.fitBounds(group.getBounds(), { padding: [60, 60] });
     setGpxLayers((prev) => [...prev, group]);
-    notify('success', 'Tramos dentro de parques naturales resaltados en el mapa.');
+    notify('success', enReserva
+        ? 'Tramos resaltados en el mapa. Los punteados oscuros entran en una zona de reserva (A).'
+        : 'Tramos dentro de parques naturales resaltados en el mapa.');
 };

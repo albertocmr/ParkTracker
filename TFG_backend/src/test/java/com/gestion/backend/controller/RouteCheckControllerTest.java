@@ -121,4 +121,38 @@ class RouteCheckControllerTest {
            .andExpect(jsonPath("$.parks", hasItem("sierra_huetor")))
            .andExpect(jsonPath("$.intersections.sierra_huetor.type").value("MultiLineString"));
     }
+
+    @Test
+    void routeThroughAReserveZoneIsReported() throws Exception {
+        Assumptions.assumeTrue(TEST_PYTHON != null, "PARKTRACKER_TEST_PYTHON no definido");
+        // Tramo que atraviesa la zona de reserva (A) de Sierra de Huétor (lon -3.49 a -3.46)
+        StringBuilder points = new StringBuilder();
+        for (int i = 0; i <= 30; i++) {
+            points.append(String.format(java.util.Locale.ROOT, "<trkpt lat=\"37.25\" lon=\"%.4f\"/>", -3.52 + i * 0.003));
+        }
+        String route = "<?xml version=\"1.0\"?><gpx version=\"1.1\" creator=\"test\" "
+                + "xmlns=\"http://www.topografix.com/GPX/1/1\"><trk><trkseg>" + points + "</trkseg></trk></gpx>";
+
+        mvc.perform(multipart("/api/routes/check").file(gpx("r.gpx", route)).with(jwt()))
+           .andExpect(status().isOk())
+           .andExpect(jsonPath("$.reservas.sierra_huetor.subzonas[0].subzona").value("A"))
+           .andExpect(jsonPath("$.reservas.sierra_huetor.intersections.type").value("MultiLineString"));
+    }
+
+    @Test
+    void routeOutsideReserveZonesReportsNone() throws Exception {
+        Assumptions.assumeTrue(TEST_PYTHON != null, "PARKTRACKER_TEST_PYTHON no definido");
+        // Tramo dentro del parque pero al oeste de su zona A
+        StringBuilder points = new StringBuilder();
+        for (int i = 0; i <= 10; i++) {
+            points.append(String.format(java.util.Locale.ROOT, "<trkpt lat=\"37.25\" lon=\"%.4f\"/>", -3.56 + i * 0.002));
+        }
+        String route = "<?xml version=\"1.0\"?><gpx version=\"1.1\" creator=\"test\" "
+                + "xmlns=\"http://www.topografix.com/GPX/1/1\"><trk><trkseg>" + points + "</trkseg></trk></gpx>";
+
+        mvc.perform(multipart("/api/routes/check").file(gpx("r.gpx", route)).with(jwt()))
+           .andExpect(status().isOk())
+           .andExpect(jsonPath("$.parks", hasItem("sierra_huetor")))
+           .andExpect(jsonPath("$.reservas.sierra_huetor").doesNotExist());
+    }
 }

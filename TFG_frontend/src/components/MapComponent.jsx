@@ -6,6 +6,29 @@ import { removeGPXLayers, addGPXToMap, addIntersectionsToMap } from '../util/gpx
 import { executeScriptPython } from '../util/scriptManager';
 import Modal from './Modal';
 import { formatParkName } from '../util/ParkNameFormatter';
+import { NORMATIVA } from './ParkRestrictions';
+
+// Normas del plan que se refieren a las zonas de reserva (A): "en zona A", "zonas de reserva (A)", "Zona A1"...
+const RESERVE_RULE = /zonas? (de reserva|a\d?\b)|reserva \(a\)/i;
+const REGIMEN_LABEL = { prohibida: "Prohibido", autorizacion: "Requiere autorización", comunicacion_previa: "Requiere comunicación previa", condicion: "Norma de uso", general: "Norma general" };
+
+const ReserveZoneWarning = ({ park, reserva }) => {
+  const normas = (NORMATIVA[park]?.normas ?? []).filter((n) => RESERVE_RULE.test(n.texto));
+  const zonas = reserva.subzonas.map((z) => `${z.subzona} (${z.descripcion})`).join(", ");
+  return (
+    <div className="rounded-2xl border border-clay-500/30 bg-clay-50 px-5 py-4 text-sm leading-relaxed text-clay-600" role="alert">
+      <p className="font-semibold">Tu ruta entra en la zona de reserva de {formatParkName(park)}: {zonas}.</p>
+      <p className="mt-1 text-ink/80">Son las áreas de mayor protección del parque. Normas del plan para estas zonas:</p>
+      {normas.length > 0 ? (
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-ink/85">
+          {normas.map((n) => <li key={n.texto}><strong className="font-semibold">{REGIMEN_LABEL[n.regimen]}:</strong> {n.texto}</li>)}
+        </ul>
+      ) : (
+        <p className="mt-2 text-ink/85">El plan no recoge normas de uso público específicas para estas zonas; consulta el PORN y el PRUG del parque.</p>
+      )}
+    </div>
+  );
+};
 
 const METHODS = [
   { value: "1", label: "Motor", description: "Has seleccionado realizar la ruta en un vehículo a motor.", icon: "M5 17h14M6.5 17l1.2-5.2A2 2 0 0 1 9.6 10h4.8a2 2 0 0 1 1.9 1.8L17.5 17M7.5 20a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" },
@@ -37,6 +60,7 @@ function Map() {
   const [selectedGPXFile, setSelectedGPXFile] = useState(null);
   const [parksList, setParksList] = useState([]);
   const [intersections, setIntersections] = useState({});
+  const [reservas, setReservas] = useState({});
   const [restrictions, setRestrictions] = useState({});
   const [selectedMethod, setSelectedMethod] = useState("");
   const [analyzed, setAnalyzed] = useState(false);
@@ -73,6 +97,7 @@ function Map() {
     setAnalyzed(false);
     setParksList([]);
     setIntersections({});
+    setReservas({});
     addGPXToMap(file, map, setSelectedGPXFile, gpxLayers, setGpxLayers, notify);
   };
 
@@ -84,7 +109,7 @@ function Map() {
 
   const checkRoute = () => {
     setNotice(null);
-    executeScriptPython(selectedGPXFile, setLoadingScript, setParksList, setIntersections, () => {
+    executeScriptPython(selectedGPXFile, setLoadingScript, setParksList, setIntersections, setReservas, () => {
       setAnalyzed(true);
       setShowResults(true);
     }, notify);
@@ -96,6 +121,7 @@ function Map() {
     setAnalyzed(false);
     setParksList([]);
     setIntersections({});
+    setReservas({});
     setNotice(null);
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
@@ -174,7 +200,7 @@ function Map() {
                 <button type="button" className="btn-secondary" disabled={!analyzed} onClick={() => setShowResults(true)}>
                   Ver resultados
                 </button>
-                <button type="button" className="btn-secondary" disabled={!analyzed} onClick={() => addIntersectionsToMap(map, intersections, setGpxLayers, notify)}>
+                <button type="button" className="btn-secondary" disabled={!analyzed} onClick={() => addIntersectionsToMap(map, intersections, reservas, setGpxLayers, notify)}>
                   Ver tramos
                 </button>
               </div>
@@ -217,7 +243,7 @@ function Map() {
         footer={
           <>
             {parksList.length > 0 && (
-              <button type="button" className="btn-secondary" onClick={() => { setShowResults(false); addIntersectionsToMap(map, intersections, setGpxLayers, notify); }}>
+              <button type="button" className="btn-secondary" onClick={() => { setShowResults(false); addIntersectionsToMap(map, intersections, reservas, setGpxLayers, notify); }}>
                 Ver tramos en el mapa
               </button>
             )}
@@ -239,7 +265,8 @@ function Map() {
               {parksList.map((park) => {
                 const ParkRestrictions = restrictions[park];
                 return (
-                  <div key={park}>
+                  <div key={park} className="space-y-4">
+                    {reservas[park] && <ReserveZoneWarning park={park} reserva={reservas[park]} />}
                     {ParkRestrictions ? <ParkRestrictions /> : <p className="text-sm text-pine-900/60">No hay restricciones disponibles para este parque.</p>}
                   </div>
                 );
