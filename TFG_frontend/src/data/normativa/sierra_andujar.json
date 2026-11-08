@@ -1,0 +1,272 @@
+{
+  "parque": "sierra_andujar",
+  "plan": "Decreto 354/2003, de 26 de diciembre (PORN y PRUG); PRUG prorrogado por Orden de 13/12/2011",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/landing-page-planificacion/-/asset_publisher/Jw7AHImcvbx0/content/porn-y-prug-del-parque-natural-sierra-de-and-c3-bajar-2/20151",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "El desarrollo de actividades de turismo en el medio rural, de turismo activo y de ecoturismo por parte de empresas se regirá por la normativa vigente, en particular por lo establecido en el Decreto 20/2002, de 29 de enero, y en la Orden de 20 de marzo de 2003, conjunta de las Consejerías de Turismo y Deporte y de Medio Ambiente, y las disposiciones establecidas en el Plan de Ordenación de los Recursos Naturales y en el Plan Rector de Uso y Gestión.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "La Consejería de Medio Ambiente podrá limitar, condicionar o someter a autorización, de forma cautelar e inmediata, por un tiempo determinado o de manera permanente, el desarrollo de cualquier tipo de actividad en un determinado lugar, cuando existan razones justificadas.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "La Consejería de Medio Ambiente podrá regular mediante Orden conjunta con la Consejería de Turismo y Deporte las condiciones medioambientales para el desarrollo de las nuevas actividades deportivas, de turismo activo o de ecoturismo que se declaren.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "La circulación de vehículos terrestres a motor por caminos rurales de anchura inferior a 2 metros, ni por servidumbres de los dominios públicos hidráulicos, cortafuegos y fajas auxiliares, vías forestales de extracción de madera y cauces secos e inundados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "La circulación campo a través o fuera de los caminos permitidos de vehículos a motor.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "La circulación en quads vinculada a actividades de uso público en todo el Parque Natural.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "Circulación de vehículos a motor en Zonas de reserva (A).",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "Circulación de caravanas con 4 o más vehículos.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "La circulación campo a través o fuera de los caminos permitidos de bicicleta.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "Bicicleta de montaña en Zonas de reserva (A).",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "Senderismo en Zonas de reserva (A).",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "Vivaqueo, entendiendo por tal la actividad de pasar la noche al aire libre utilizando el material específico para estos menesteres, como el saco de dormir, la funda de vivac o tiendas de campaña de pequeña envergadura.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "El paracaidismo en todo el Parque Natural.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "Las actividades relacionadas con actividades recreativas que empleen helicópteros, ultraligeros, aviones, avionetas y cualquier vehículo aéreo con motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "El uso de embarcaciones a motor con potencia superior a 20 HP en los embalses del Jándula y del Encinarejo.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "Actividades aeronaúticas: globo aerostático.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "El uso de embarcaciones a motor con potencia inferior a 20 HP en los embalses del Jándula y del Encinarejo.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "Cualquier actividad permitida que se realice fuera de los equipamientos básicos y complementarios que requieran la instalación de dotaciones, incluso cuando éstas sean provisionales.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "La realización de cualquier tipo de competición deportiva, prueba o exhibición organizada.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "Las acampadas o campamentos juveniles que se organicen de acuerdo con el Decreto 45/2000, de 31 de enero, sobre la organización de acampadas y campamentos juveniles de Andalucía.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "El establecimiento de áreas de despegue o aterrizaje para actividades aeronáuticas sin motor, así como la señalización de las mismas.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "La puesta en valor de nuevos senderos peatonales y su señalización.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "Aquellas romerías o concentraciones de carácter popular que hayan iniciado su actividad durante los últimos 10 años o la vayan a iniciar en la actualidad.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 354/2003, de 26 de diciembre, por el que se aprueba el PORN y PRUG del Parque Natural Sierra de Andújar…",
+        "pagina": 37
+      }
+    },
+    {
+      "texto": "Solo se puede encender fuego para cocinar en las dotaciones previstas para ello (barbacoas), durante la época permitida y con la precaución debida para evitar su propagación.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 354/2003, PRUG",
+        "pagina": 22
+      }
+    }
+  ]
+}

@@ -20,7 +20,7 @@ export const parkNameMap = {
   "sierra maria los velez": "Parque Natural Sierra María-Los Vélez",
   "sierra nevada": "Parque Natural de Sierra Nevada",
   "sierra nieves": "Parque Natural Sierra de las Nieves",
-  "sierra norte sevilla": "Parque Natural Sierra Norte de Sevilla",
+  "sierra norte sevilla": "Parque Natural Sierra Morena de Sevilla",
   "sierra tejeda": "Parque Natural Sierras de Tejeda, Almijara y Alhama",
   "sierras subbeticas": "Parque Natural Sierras Subbéticas"
 };

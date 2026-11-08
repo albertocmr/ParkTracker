@@ -1,0 +1,273 @@
+{
+  "parque": "sierra_maria_los_velez",
+  "plan": "Decreto 191/2005, de 6 de septiembre (PORN y PRUG)",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/parque-natural-sierra-maria-los-velez",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "El desarrollo de actividades de turismo en el medio rural, de turismo activo y de ecoturismo por parte de empresas se regirá por la normativa vigente, en particular por lo establecido en el Decreto 20/2002, de 29 de enero, de Turismo en el Medio Rural y Turismo Activo, y en la Orden de 20 de marzo de 2003, conjunta de las Consejerías de Turismo y Deporte y de Medio Ambiente, por la que se establecen obligaciones y condiciones medioambientales para la práctica de las actividades integrantes del turismo activo, y las disposiciones establecidas en el Plan de Ordenación de los Recursos Naturales y en el Plan Rector de Uso y Gestión.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Las Consejerías de Turismo, Comercio y Deporte y de Medio Ambiente podrán regular mediante Orden Conjunta, las obligaciones y condiciones medioambientales para la práctica de aquellas actividades que en el futuro sean declaradas como actividades de turismo activo o de ecoturismo.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "La Consejería de Medio Ambiente podrá limitar, condicionar o someter a autorización, de forma cautelar e inmediata, por un tiempo determinado o de manera permanente, el desarrollo de cualquier tipo de actividad en un determinado lugar, cuando existan razones justificadas.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "La circulación de vehículos terrestres a motor por caminos rurales de anchura inferior a 2 metros, ni por servidumbres de los dominios públicos hidráulicos, cortafuegos y fajas auxiliares, vías forestales de extracción de madera y cauces secos o inundados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "La circulación de vehículos campo a través o fuera de los caminos permitidos de bicicletas y vehículos a motor.",
+      "medios": [
+        "motor",
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "La circulación de quads vinculada a actividades de uso público.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 28
+      }
+    },
+    {
+      "texto": "La realización de cualquier tipo de competición deportiva, prueba o exhibición organizada.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Bicicleta de montaña en Zonas de reserva (A).",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Travesía y montañismo en zonas de reserva (A).",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "La puesta en valor de nuevos senderos peatonales y su señalización.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Paracaidismo.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Actividades aeronáuticas: globo aerostático.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Escalada: en Zonas de reserva (A) y del 1 de diciembre al 31 de agosto, en zonas donde se produzca nidificación y cría de aves rapaces, periodo que podrá ser modificado si se realizan estudios posteriores que lo justifiquen.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Espeleología.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Cualquier actividad permitida que se realice fuera de los equipamientos básicos y complementarios que requiera la instalación de dotaciones, incluso cuando éstas sean provisionales.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Las acampadas o campamentos juveniles que se organicen de acuerdo con el Decreto 45/2000, de 31 de enero, sobre la organización de acampadas y campamentos juveniles de Andalucía.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "La apertura de nuevas vías de escalada en paredes y el reequipamiento y el desequipamiento de las existentes.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "El establecimiento de áreas de despegue o aterrizaje, así como la señalización de las mismas, para actividades aeronáuticas sin motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "La creación de áreas de acampada.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "La creación de nuevos campamentos de turismo.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 28
+      }
+    },
+    {
+      "texto": "Aquellas romerías o concentraciones de carácter popular que hayan iniciado su actividad durante los últimos 10 años o la vayan a iniciar en la actualidad.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "Las actividades relacionadas con actividades recreativas que empleen helicópteros, ultraligeros, aviones, avionetas y cualquier vehículo aéreo con motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre, por el que se aprueban el Plan de Ordenación de los Recursos Naturales y el…",
+        "pagina": 27
+      }
+    },
+    {
+      "texto": "La pernocta, solo en las zonas habilitadas para ello.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre",
+        "pagina": 55
+      }
+    },
+    {
+      "texto": "Solo se puede encender fuego para cocinar en las dotaciones previstas para ello (barbacoas), durante la época permitida y con la precaución debida para evitar su propagación.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "condicion",
+      "fuente": {
+        "documento": "Decreto 191/2005, de 6 de septiembre",
+        "pagina": 55
+      }
+    }
+  ]
+}

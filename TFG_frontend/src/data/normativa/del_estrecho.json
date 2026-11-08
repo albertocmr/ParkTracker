@@ -1,0 +1,196 @@
+{
+  "parque": "del_estrecho",
+  "plan": "Decreto 130/2024, de 23 de julio (PORN Frente Litoral Algeciras-Tarifa y PRUG)",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/algeciras-tarifa-paraje-natural-playa-de-los-lances-y-parque-natural-del-estrecho",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "La persona titular de la Consejería competente en materia de medio ambiente podrá mediante Orden:",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 25
+      }
+    },
+    {
+      "texto": "En relación con las actividades relacionadas en apartados anteriores, modificar el régimen de intervención y las limitaciones establecidas.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 36
+      }
+    },
+    {
+      "texto": "En relación con el desarrollo de cualquier otra actividad distinta de las relacionadas en los apartados anteriores, previa valoración de la incidencia del desarrollo de la actividad en la conservación de los valores naturales que motivaron la declaración del Parque Natural, determinar, si procede, el régimen de intervención administrativa al que la actividad queda sujeta o limitar su desarrollo.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 36
+      }
+    },
+    {
+      "texto": "La persona titular de la Delegación Territorial de la Consejería competente en materia de medio ambiente podrá, mediante Resolución, limitar o restringir, a los visitantes en general o a cierto tipo de transporte, de forma eventual o permanentemente, el acceso por cualquier camino público cuando exista causa justificada por impacto ambiental, incompatibilidad del uso con la conservación, con los trabajos forestales o de aprovechamiento de los recursos y por motivos de riesgo a las personas.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": null
+    },
+    {
+      "texto": "No obstante lo establecido en este apartado, excepcionalmente la Consejería competente en materia de medio ambiente, mediante Resolución de la persona titular de la Delegación Territorial de Cádiz de la Consejería competente en materia de medio ambiente, podrá autorizar eventos deportivos, turísticos o culturales relacionados con las actividades citadas en dicho apartado.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 35
+      }
+    },
+    {
+      "texto": "Las actividades de uso público, turismo activo y ecoturismo que impliquen la circulación de motos de trial/enduro, cuatriciclos o vehículos asimilados, excepto si circulan por carreteras o caminos asfaltados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 35
+      }
+    },
+    {
+      "texto": "La realización de cualquier actividad de uso público, turismo activo o ecoturismo en Zona A1, salvo actividades vinculadas a la observación de la fauna y la flora, el patrimonio geológico y la observación geoatmosférica.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 31
+      }
+    },
+    {
+      "texto": "La realización de cualquier actividad de uso público, turismo activo o ecoturismo en Zona A2 fuera de los equipamientos que se habiliten para ello.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 31
+      }
+    },
+    {
+      "texto": "La acampada y la pernocta (aparcar entre el ocaso y la salida del sol) de caravanas, autocaravanas y vehículos de características similares, fuera de los lugares expresamente habilitados a tal fin.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 35
+      }
+    },
+    {
+      "texto": "La observación de la fauna y la flora, del patrimonio geológico y la observación geoatmosférica, cuando su práctica implique el uso de equipos auxiliares, tales como focos, pantallas reflectoras, generadores eléctricos u otros, así como la instalación de estructuras de camuflaje, permanentes o no desmontables, para la observación de aves y, en cualquier caso, cuando se desarrolle en Zona A1.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 31
+      }
+    },
+    {
+      "texto": "Las actividades de filmación, rodaje, grabación sonora y fotografía, cuando su práctica implique el uso de equipos auxiliares, tales como focos, pantallas reflectoras, generadores eléctricos u otros, así como la instalación de estructuras de camuflaje permanentes o no desmontables.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 31
+      }
+    },
+    {
+      "texto": "Las motos de agua, excepto en tareas de apoyo a actividades náuticas sin motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 35
+      }
+    },
+    {
+      "texto": "El uso de las salinas y las instalaciones de acuicultura con fines recreativos, didácticos o turísticos, cuando no esté sometido al procedimiento de prevención ambiental.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 33
+      }
+    },
+    {
+      "texto": "La celebración de romerías y fiestas populares con menos de diez años de antigüedad y aquellas de más de diez años de antigüedad cuando se produzcan modificaciones de las condiciones establecidas en la última autorización otorgada.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 34
+      }
+    },
+    {
+      "texto": "La celebración de pruebas o eventos deportivos y las concentraciones y actividades recreativas, tal como las define el Decreto 195/2007, de 26 de junio, por el que se establecen las condiciones generales para la celebración de espectáculos públicos y actividades recreativas de carácter ocasional y extraordinario.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 130/2024, de 23 de julio, por el que se aprueban el Plan de Ordenación, parte 03",
+        "pagina": 34
+      }
+    },
+    {
+      "texto": "Las actividades en bicicleta y las rutas ecuestres en los senderos Los Algarbes-Betijuelo y Los Lances, de uso exclusivamente peatonal, y en los sistemas dunares y humedales costeros.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 130/2024 (BOJA nº 146), parte 3",
+        "pagina": 35
+      }
+    },
+    {
+      "texto": "El acceso al Paraje Natural Playa de los Lances con perros que no vayan sujetos con correa.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 130/2024 (BOJA nº 146), parte 3",
+        "pagina": 35
+      }
+    }
+  ]
+}

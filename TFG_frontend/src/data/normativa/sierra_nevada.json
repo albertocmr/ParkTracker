@@ -1,0 +1,204 @@
+{
+  "parque": "sierra_nevada",
+  "plan": "Decreto 238/2011, de 12 de julio (PORN y PRUG del Parque Nacional y del Parque Natural)",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/sierra-nevada",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "Las presentes normas generales serán de aplicación al Parque Nacional y sus zonas de reserva (A), regulación especial (B) y regulación común (C), sin perjuicio de lo dispuesto en su normativa particular.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 49
+      }
+    },
+    {
+      "texto": "La modificación del Plan supone cambios concretos en alguno o algunos de sus contenidos, tratándose de ajustes puntuales que no alteran sustancialmente la gestión del espacio.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 146
+      }
+    },
+    {
+      "texto": "Las limitaciones de acceso o de uso, así como los lugares, fechas y condiciones de las actividades, se establecen mediante resolución de la Dirección General competente en materia de espacios naturales.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": null
+    },
+    {
+      "texto": "La circulación de vehículos a motor fuera de las vías autorizadas. Límite de velocidad: 40 km/h, salvo señalización específica.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 185
+      }
+    },
+    {
+      "texto": "No está permitida la circulación de motocicletas, automóviles y demás vehículos a motor campo a través, por cortafuegos, vías forestales de extracción de madera, vías pecuarias, cauces secos o inundados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 185
+      }
+    },
+    {
+      "texto": "La circulación de vehículos a motor está permitida solo en caminos habilitados.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 52
+      }
+    },
+    {
+      "texto": "El estacionamiento de caravanas fuera de áreas habilitadas.",
+      "medios": [
+        "motor",
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 52
+      }
+    },
+    {
+      "texto": "En el Parque Nacional, introducir perros y animales de compañía sueltos, salvo perros de rescate, perros guía y perros ganaderos.",
+      "medios": [
+        "motor",
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 52
+      }
+    },
+    {
+      "texto": "Actividades con megafonía que alteren el silencio natural.",
+      "medios": [
+        "motor",
+        "bike",
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 52
+      }
+    },
+    {
+      "texto": "Cicloturismo por caminos, pistas u otros espacios donde exista limitación de acceso o de uso.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 148
+      }
+    },
+    {
+      "texto": "El cicloturismo en senderos exclusivamente peatonales.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 51
+      }
+    },
+    {
+      "texto": "Las rutas ecuestres en senderos peatonales.",
+      "medios": [
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 51
+      }
+    },
+    {
+      "texto": "Las actividades con megafonía que alteren el silencio natural.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 52
+      }
+    },
+    {
+      "texto": "Rutas ecuestres por caminos, pistas u otros espacios donde exista limitación de acceso o de uso.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 51
+      }
+    },
+    {
+      "texto": "Actividades de filmación y fotografía.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio, por el que se establece la ordenación y gestión de Sierra Nevada (Boja nº 155, de…",
+        "pagina": 50
+      }
+    },
+    {
+      "texto": "Senderismo y travesía de montaña por caminos, pistas u otros espacios donde exista limitación de acceso o de uso.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": null
+    },
+    {
+      "texto": "El vivaqueo y la acampada nocturna vinculados a travesía de montaña para grupos de más de 15 personas o que utilicen más de 3 tiendas de campaña.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio (BOJA nº 155)",
+        "pagina": 50
+      }
+    },
+    {
+      "texto": "El vivaqueo y la acampada nocturna vinculados a travesía de montaña para grupos de menos de 15 personas y que utilicen menos de 3 tiendas de campaña.",
+      "medios": [
+        "hike"
+      ],
+      "regimen": "comunicacion_previa",
+      "fuente": {
+        "documento": "Decreto 238/2011, de 12 de julio (BOJA nº 155)",
+        "pagina": 51
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+---
+import ParkLayout from "../../layouts/ParkLayout.astro";
+import ParkRestrictions, { NORMATIVA } from "../../components/ParkRestrictions.jsx";
+
+// Una página por parque (/parques-naturales/<parque>), generada en la build a partir de su normativa
+export const prerender = true;
+
+export function getStaticPaths() {
+  return Object.keys(NORMATIVA).map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const normativa = NORMATIVA[slug];
+---
+
+<ParkLayout slug={slug} pornUrl={normativa.url} plan={normativa.plan} consultado={normativa.consultado}>
+  <ParkRestrictions slug={slug} selectedMethod="4" />
+</ParkLayout>

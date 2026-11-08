@@ -9,7 +9,7 @@ const STEPS = [
 
 const STATS = [
     { value: "23", label: "parques naturales" },
-    { value: "8", label: "zonas de reserva A" },
+    { value: "27", label: "zonas de reserva A" }, // zonificación oficial de los PORN (REDIAM), ver docs/DATOS.md
     { value: "8", label: "provincias andaluzas" },
 ];
 

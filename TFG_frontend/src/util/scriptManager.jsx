@@ -2,8 +2,8 @@ import axios from 'axios';
 import { API_URL } from '../config';
 
 // Sube la ruta y la analiza en una sola petición: el backend devuelve
-// los parques atravesados y los tramos de la ruta dentro de cada uno.
-export const executeScriptPython = async (selectedGPXFile, setLoadingScript, setParksList, setIntersections, onDone, notify) => {
+// los parques atravesados, los tramos de la ruta dentro de cada uno y las zonas de reserva (A) que cruza.
+export const executeScriptPython = async (selectedGPXFile, setLoadingScript, setParksList, setIntersections, setReservas, onDone, notify) => {
     if (!selectedGPXFile) {
         notify('error', 'Carga primero un archivo GPX.');
         return;
@@ -16,7 +16,7 @@ export const executeScriptPython = async (selectedGPXFile, setLoadingScript, set
 
     try {
         const response = await axios.post(`${API_URL}/api/routes/check`, formData);
-        const { parks, intersections } = response.data;
+        const { parks, intersections, reservas } = response.data;
 
         if (!Array.isArray(parks)) {
             throw new Error("La API no devolvió una lista válida de parques.");
@@ -24,6 +24,7 @@ export const executeScriptPython = async (selectedGPXFile, setLoadingScript, set
 
         setParksList(parks);
         setIntersections(intersections || {});
+        setReservas(reservas || {});
         onDone();
 
     } catch (error) {

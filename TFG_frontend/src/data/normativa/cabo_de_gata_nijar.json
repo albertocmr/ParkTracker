@@ -1,0 +1,275 @@
+{
+  "parque": "cabo_de_gata_nijar",
+  "plan": "Decreto 37/2008, de 5 de febrero (PORN y PRUG)",
+  "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/gestion-espacios-protegidos/porn-prug-planes-de-gestion/documentos-aprobados/parque-natural-cabo-de-gata-nijar",
+  "consultado": "2026-11-08",
+  "normas": [
+    {
+      "texto": "Las presentes normas generales serán de aplicación a las zonas de reserva (A), de regulación especial (B) y de regulación común (C) del parque natural.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 3
+      }
+    },
+    {
+      "texto": "El desarrollo de actividades de turismo en el medio rural, de turismo activo y de ecoturismo por parte de empresas se regirá por la normativa vigente, en particular por lo establecido en el Decreto 20/2002, de 29 de enero, de Turismo en el Medio Rural y Turismo Activo y en la Orden de 20 de marzo de 2003, conjunta de las Consejerías de Turismo y Deporte y de Medio Ambiente, por la que se establecen las obligaciones y condiciones medioambientales para la práctica de las actividades integrantes del turismo activo, y las disposiciones establecidas en el presente Plan y en el Plan Rector de Uso y Gestión.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "Todas aquellas actividades organizadas por empresas y no comprendidas en el Decreto 20/2002, de 29 de enero, requerirán autorización previa de la Consejería competente en materia de medio ambiente.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "El acceso de visitantes podrá ser regulado por la Consejería competente en materia de medio ambiente en los sectores y épocas que considere oportunos, para la adecuada preservación de los recursos naturales y sin perjuicio de las competencias que legalmente correspondan a los municipios.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "Las Consejerías competentes en materia de turismo y medio ambiente podrán regular mediante Orden conjunta, las obligaciones y condiciones medioambientales para la práctica de aquellas actividades que en el futuro sean declaradas como actividades de turismo activo o de ecoturismo.",
+      "medios": [
+        "general"
+      ],
+      "regimen": "general",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 9
+      }
+    },
+    {
+      "texto": "La circulación de vehículos por caminos y pistas forestales a velocidades superiores a 40 km/h, salvo indicación expresa que indique un límite diferente.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 9
+      }
+    },
+    {
+      "texto": "La circulación campo a través o fuera de los caminos permitidos, con bicicletas, vehículos a motor y en equino.",
+      "medios": [
+        "motor",
+        "bike"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 9
+      }
+    },
+    {
+      "texto": "La celebración de pruebas deportivas de vehículos terrestres a motor en cualquier camino del Parque Natural, excepto en las carreteras comarcales.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 9
+      }
+    },
+    {
+      "texto": "La actividad motonáutica, salvo en las playas urbanas en las zonas balizadas a tal efecto.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 9
+      }
+    },
+    {
+      "texto": "La circulación de quads en actividades vinculadas al uso público.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 9
+      }
+    },
+    {
+      "texto": "La realización de cualquier tipo de competición deportiva, prueba o exhibición organizada.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "El tránsito, para la realización de actividades de educación ambiental, por caminos de acceso restringido por motivos de conservación.",
+      "medios": [
+        "motor",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "La puesta en valor de nuevos senderos peatonales y su señalización.",
+      "medios": [
+        "bike",
+        "hike"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "El globo aerostático en Zonas de Reserva y el paracaidismo en todo el Parque Natural.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 9
+      }
+    },
+    {
+      "texto": "La acampada y el aparcamiento permanente o temporal fuera de los campamentos de turismo y áreas de acampada, entre el ocaso y la salida del sol, de vehículos habilitados como viviendas, y la construcción de habitáculos con cualquier tipo de materiales.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 9
+      }
+    },
+    {
+      "texto": "Las actividades relacionadas con actividades recreativas que empleen helicópteros, ultraligeros, aviones, avionetas y cualquier vehículo aéreo con motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 9
+      }
+    },
+    {
+      "texto": "Cualquier actividad permitida que se realice fuera de la red de senderos y equipamientos que requiera la instalación de dotaciones, incluso cuando éstas sean provisionales.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "Los establecimientos de restauración no permanentes al igual que todo tipo de quiosco o puesto de venta.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "Las actividades aeronáuticas siguientes: parapente, ala delta, paramotor y globo aerostático, este último estará prohibido en Zonas de Reserva, Zonas A.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "El establecimiento de áreas de despegue o aterrizaje, así como la señalización de las mismas, para actividades aeronáuticas sin motor.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "La práctica del buceo con equipo autónomo, en aquellos lugares designados para dicha actividad (Zonas B5).",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "Las instalaciones relacionadas con los deportes náuticos, ya sean fijas o temporales.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "La creación de campamentos de turismo y áreas de acampada.",
+      "medios": [
+        "otras"
+      ],
+      "regimen": "autorizacion",
+      "fuente": {
+        "documento": "2b.PORN del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 8
+      }
+    },
+    {
+      "texto": "El tránsito y estacionamiento de vehículos a motor en las playas, salvo vehículos oficiales de vigilancia, salvamento o gestión.",
+      "medios": [
+        "motor"
+      ],
+      "regimen": "prohibida",
+      "fuente": {
+        "documento": "Anexo II. PRUG del Parque Natural Cabo de Gata-Níjar",
+        "pagina": 20
+      }
+    }
+  ]
+}
