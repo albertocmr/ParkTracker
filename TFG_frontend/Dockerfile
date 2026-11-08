@@ -1,6 +1,6 @@
 # Imagen para desarrollo local con docker compose (en producción el frontend lo sirve Vercel).
 # Astro 7 necesita Node >= 22.23.4
-FROM node:24-alpine
+FROM node:25-alpine
 
 # Define el directorio de trabajo dentro del contenedor; todo corre sin privilegios de root
 WORKDIR /app
