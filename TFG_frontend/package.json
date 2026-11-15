@@ -4,12 +4,12 @@
   "description": "Trabajo Fin de Grado 2024/25",
   "private": true,
   "dependencies": {
-    "@astrojs/react": "^7.1.2",
-    "@astrojs/vercel": "^11.0.18",
+    "@astrojs/react": "^7.1.8",
+    "@astrojs/vercel": "^11.0.21",
     "@auth0/auth0-react": "^2.30.0",
     "@mapbox/togeojson": "^0.16.2",
-    "astro": "^7.4.5",
-    "axios": "^1.21.0",
+    "astro": "^7.4.11",
+    "axios": "^1.21.1",
     "leaflet": "^1.9.4",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
